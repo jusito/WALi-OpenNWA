@@ -122,14 +122,14 @@ void ProgAnalysis::traverseCFG(CFG *cfg, std::set<CFG *> &cfgs, std::set<CFG *> 
     } else {
       CFG *callee = edge->getCallee();
       if(wpdsType == USING_WPDS) {
-	pds->add_rule(pds_state, edge->getSource()->getWpdsKey(), pds_state, callee->getEntry()->getWpdsKey(), edge->getTarget()->getWpdsKey(), 
+	      pds->add_rule(pds_state, edge->getSource()->getWpdsKey(), pds_state, callee->getEntry()->getWpdsKey(), edge->getTarget()->getWpdsKey(), 
 		      edge->getWeight());
       } else {
-	epds->add_rule(pds_state, edge->getSource()->getWpdsKey(), pds_state, callee->getEntry()->getWpdsKey(), edge->getTarget()->getWpdsKey(), 
-		       edge->getWeight(), edge->getMergeFn());
+	      epds->add_rule(pds_state, edge->getSource()->getWpdsKey(), pds_state, callee->getEntry()->getWpdsKey(), edge->getTarget()->getWpdsKey(), 
+		      edge->getWeight(), edge->getMergeFn());
       }
       if(cfgs_done.find(callee) == cfgs_done.end()) {
-	cfgs.insert(callee);
+	      cfgs.insert(callee);
       }
     }
 

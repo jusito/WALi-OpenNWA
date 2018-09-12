@@ -259,8 +259,8 @@ template< typename Set > class GenKillTransformer_T : public wali::SemElem {
 
     static std::ostream& WPDS_CALL print_static_transformers( std::ostream& o )
     {
-      o << "ONE\t=\t"    << *one()    << std::endl;
-      o << "ZERO\t=\t"   << *zero()   << std::endl;
+      o << "ONE\t=\t"    << *id()    << std::endl;
+      o << "ZERO\t=\t"   << *top()   << std::endl;
       o << "BOTTOM\t=\t" << *bottom() << std::endl;
       return o;
     }

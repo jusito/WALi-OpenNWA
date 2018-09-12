@@ -1,6 +1,6 @@
 #include <iostream>
-#include "VarSet.hpp"
-#include "GenKillTransformer_T.hpp"
+#include "../VarSet.hpp"
+#include "../GenKillTransformer_T.hpp"
 #include "wali/Common.hpp"
 #include "wali/wpds/WPDS.hpp"
 #include "wali/wpds/fwpds/FWPDS.hpp"
