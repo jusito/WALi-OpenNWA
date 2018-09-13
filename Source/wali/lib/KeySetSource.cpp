@@ -2,7 +2,7 @@
  * @author Amanda Burton
  */
 
-#include "KeySetSource.hpp"
+#include "wali/KeySetSource.hpp"
 
 namespace wali
 {

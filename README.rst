@@ -1,6 +1,14 @@
 WALi and OpenNWA
 ================
 
+TODO:
+-----
+
+* Clean up CMake Files
+* Fix compile warnings
+* Update this document
+* Add install Rule to wali
+
 Prerequsites:
 
 * Boost  (old versions are OK; we actually variously use 1.33.1 and 1.42)

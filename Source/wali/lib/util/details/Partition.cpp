@@ -1,4 +1,4 @@
-#include "Partition.hpp"
+#include "wali/util/details/Partition.hpp"
 
 
 namespace wali

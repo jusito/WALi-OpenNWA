@@ -1,0 +1,7 @@
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/CMakeFiles/edit_cache.dir
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/CMakeFiles/rebuild_cache.dir
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/include/CMakeFiles/edit_cache.dir
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/include/CMakeFiles/rebuild_cache.dir
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib/CMakeFiles/edit_cache.dir
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib/CMakeFiles/rebuild_cache.dir
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib/CMakeFiles/wali.dir

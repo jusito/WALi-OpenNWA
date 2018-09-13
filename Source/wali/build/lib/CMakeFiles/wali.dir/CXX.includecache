@@ -1,0 +1,2052 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/wali/Common.hpp
+climits
+-
+string
+-
+iostream
+-
+wali/Key.hpp
+../include/wali/wali/Key.hpp
+
+../include/wali/Countable.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/ref_ptr.hpp
+../include/wali/wali/ref_ptr.hpp
+
+../include/wali/DefaultWorklist.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/Worklist.hpp
+../include/wali/wali/Worklist.hpp
+list
+-
+
+../include/wali/Exception.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/Printable.hpp
+../include/wali/wali/Printable.hpp
+string
+-
+stdexcept
+-
+
+../include/wali/HashMap.hpp
+climits
+-
+utility
+-
+functional
+-
+iostream
+-
+wali/hm_hash.hpp
+../include/wali/wali/hm_hash.hpp
+
+../include/wali/IMarkable.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+
+../include/wali/IMergeFn.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/ref_ptr.hpp
+../include/wali/wali/ref_ptr.hpp
+wali/SemElem.hpp
+../include/wali/wali/SemElem.hpp
+wali/SemElemTensor.hpp
+../include/wali/wali/SemElemTensor.hpp
+iostream
+-
+
+../include/wali/IntSource.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/KeySource.hpp
+../include/wali/wali/KeySource.hpp
+
+../include/wali/Key.hpp
+string
+-
+set
+-
+wali/ref_ptr.hpp
+../include/wali/wali/ref_ptr.hpp
+
+../include/wali/KeyContainer.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/hm_hash.hpp
+../include/wali/wali/hm_hash.hpp
+utility
+-
+
+../include/wali/KeyOrderWorklist.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/PriorityWorklist.hpp
+../include/wali/wali/PriorityWorklist.hpp
+
+../include/wali/KeyPairSource.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/KeySource.hpp
+../include/wali/wali/KeySource.hpp
+wali/KeyContainer.hpp
+../include/wali/wali/KeyContainer.hpp
+
+../include/wali/KeySetSource.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/KeySource.hpp
+../include/wali/wali/KeySource.hpp
+wali/KeyContainer.hpp
+../include/wali/wali/KeyContainer.hpp
+set
+-
+
+../include/wali/KeySource.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/Countable.hpp
+../include/wali/wali/Countable.hpp
+wali/Printable.hpp
+../include/wali/wali/Printable.hpp
+wali/hm_hash.hpp
+../include/wali/wali/hm_hash.hpp
+
+../include/wali/KeySpace.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/HashMap.hpp
+../include/wali/wali/HashMap.hpp
+wali/KeySource.hpp
+../include/wali/wali/KeySource.hpp
+vector
+-
+
+../include/wali/LongestSaturatingPathSemiring.hpp
+wali/SemElem.hpp
+../include/wali/wali/SemElem.hpp
+wali/MergeFn.hpp
+../include/wali/wali/MergeFn.hpp
+wali/ref_ptr.hpp
+../include/wali/wali/ref_ptr.hpp
+wali/Key.hpp
+../include/wali/wali/Key.hpp
+set
+-
+
+../include/wali/Markable.hpp
+wali/IMarkable.hpp
+../include/wali/wali/IMarkable.hpp
+
+../include/wali/MergeFn.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/ref_ptr.hpp
+../include/wali/wali/ref_ptr.hpp
+wali/IMergeFn.hpp
+../include/wali/wali/IMergeFn.hpp
+iostream
+-
+
+../include/wali/MergeFnFactory.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/MergeFn.hpp
+../include/wali/wali/MergeFn.hpp
+string
+-
+
+../include/wali/Printable.hpp
+string
+-
+iostream
+-
+
+../include/wali/PriorityWorklist.hpp
+boost/version.hpp
+-
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/Worklist.hpp
+../include/wali/wali/Worklist.hpp
+wali/wfa/Trans.hpp
+../include/wali/wali/wfa/Trans.hpp
+wali/details/PriorityWorklist.boost_heap.hpp
+../include/wali/wali/details/PriorityWorklist.boost_heap.hpp
+wali/DefaultWorklist.hpp
+../include/wali/wali/DefaultWorklist.hpp
+wali/details/PriorityWorklist.multiset.hpp
+../include/wali/wali/details/PriorityWorklist.multiset.hpp
+
+../include/wali/Progress.hpp
+wali/ref_ptr.hpp
+../include/wali/wali/ref_ptr.hpp
+wali/Countable.hpp
+../include/wali/wali/Countable.hpp
+
+../include/wali/RankedWorklist.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/Worklist.hpp
+../include/wali/wali/Worklist.hpp
+wali/wfa/Trans.hpp
+../include/wali/wali/wfa/Trans.hpp
+map
+-
+set
+-
+
+../include/wali/Reach.hpp
+wali/SemElem.hpp
+../include/wali/wali/SemElem.hpp
+
+../include/wali/SemElem.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/ref_ptr.hpp
+../include/wali/wali/ref_ptr.hpp
+wali/Countable.hpp
+../include/wali/wali/Countable.hpp
+wali/Printable.hpp
+../include/wali/wali/Printable.hpp
+sstream
+-
+cstdlib
+-
+string
+-
+typeinfo
+-
+
+../include/wali/SemElemPair.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/SemElem.hpp
+../include/wali/wali/SemElem.hpp
+
+../include/wali/SemElemTensor.hpp
+wali/SemElem.hpp
+../include/wali/wali/SemElem.hpp
+
+../include/wali/ShortestPathSemiring.hpp
+wali/SemElem.hpp
+../include/wali/wali/SemElem.hpp
+wali/MergeFn.hpp
+../include/wali/wali/MergeFn.hpp
+wali/ref_ptr.hpp
+../include/wali/wali/ref_ptr.hpp
+wali/Key.hpp
+../include/wali/wali/Key.hpp
+set
+-
+
+../include/wali/ShortestPathWorklist.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/RankedWorklist.hpp
+../include/wali/wali/RankedWorklist.hpp
+
+../include/wali/StringSource.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/KeySource.hpp
+../include/wali/wali/KeySource.hpp
+string
+-
+
+../include/wali/TaggedWeight.hpp
+wali/SemElem.hpp
+../include/wali/wali/SemElem.hpp
+iostream
+-
+
+../include/wali/TotalOrderWorklist.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/PriorityWorklist.hpp
+../include/wali/wali/PriorityWorklist.hpp
+
+../include/wali/WeightFactory.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/SemElem.hpp
+../include/wali/wali/SemElem.hpp
+string
+-
+
+../include/wali/Worklist.hpp
+wali/Common.hpp
+../include/wali/wali/Common.hpp
+wali/Countable.hpp
+../include/wali/wali/Countable.hpp
+
+../include/wali/details/PriorityWorklist.boost_heap.hpp
+wali/Common.hpp
+../include/wali/details/wali/Common.hpp
+wali/Worklist.hpp
+../include/wali/details/wali/Worklist.hpp
+wali/wfa/Trans.hpp
+../include/wali/details/wali/wfa/Trans.hpp
+map
+-
+set
+-
+functional
+-
+boost/heap/fibonacci_heap.hpp
+-
+boost/heap/d_ary_heap.hpp
+-
+wali/details/PriorityWorklist.boost_heap.cpp
+../include/wali/details/wali/details/PriorityWorklist.boost_heap.cpp
+
+../include/wali/details/PriorityWorklist.multiset.hpp
+wali/Common.hpp
+../include/wali/details/wali/Common.hpp
+wali/Worklist.hpp
+../include/wali/details/wali/Worklist.hpp
+wali/wfa/Trans.hpp
+../include/wali/details/wali/wfa/Trans.hpp
+map
+-
+set
+-
+wali/details/PriorityWorklist.multiset.cpp
+../include/wali/details/wali/details/PriorityWorklist.multiset.cpp
+
+../include/wali/domains/KeyedSemElemSet.hpp
+wali/SemElem.hpp
+../include/wali/domains/wali/SemElem.hpp
+boost/iterator/iterator_facade.hpp
+-
+boost/optional.hpp
+-
+wali/util/unordered_map.hpp
+../include/wali/domains/wali/util/unordered_map.hpp
+wali/util/unordered_set.hpp
+../include/wali/domains/wali/util/unordered_set.hpp
+limits
+-
+typeinfo
+-
+iostream
+-
+
+../include/wali/domains/RepresentativeString.hpp
+string
+-
+boost/optional.hpp
+-
+wali/SemElem.hpp
+../include/wali/domains/wali/SemElem.hpp
+
+../include/wali/domains/ReversedSemElem.hpp
+limits
+-
+boost/function.hpp
+-
+wali/SemElem.hpp
+../include/wali/domains/wali/SemElem.hpp
+
+../include/wali/domains/SemElemSet.hpp
+wali/SemElem.hpp
+../include/wali/domains/wali/SemElem.hpp
+set
+-
+wali/util/unordered_set.hpp
+../include/wali/domains/wali/util/unordered_set.hpp
+boost/function.hpp
+-
+
+../include/wali/graph/Functional.hpp
+wali/SemElemTensor.hpp
+../include/wali/graph/wali/SemElemTensor.hpp
+wali/ref_ptr.hpp
+../include/wali/graph/wali/ref_ptr.hpp
+wali/Countable.hpp
+../include/wali/graph/wali/Countable.hpp
+vector
+-
+
+../include/wali/graph/Graph.hpp
+set
+-
+vector
+-
+list
+-
+map
+-
+
+../include/wali/graph/GraphCommon.hpp
+wali/Common.hpp
+../include/wali/graph/wali/Common.hpp
+wali/wfa/ITrans.hpp
+../include/wali/graph/wali/wfa/ITrans.hpp
+
+../include/wali/graph/InterGraph.hpp
+wali/Countable.hpp
+../include/wali/graph/wali/Countable.hpp
+wali/ref_ptr.hpp
+../include/wali/graph/wali/ref_ptr.hpp
+wali/MergeFn.hpp
+../include/wali/graph/wali/MergeFn.hpp
+wali/graph/GraphCommon.hpp
+../include/wali/graph/wali/graph/GraphCommon.hpp
+list
+-
+vector
+-
+iostream
+-
+map
+-
+set
+-
+
+../include/wali/graph/IntraGraph.hpp
+wali/SemElem.hpp
+../include/wali/graph/wali/SemElem.hpp
+wali/graph/RegExp.hpp
+../include/wali/graph/wali/graph/RegExp.hpp
+wali/graph/Functional.hpp
+../include/wali/graph/wali/graph/Functional.hpp
+wali/graph/GraphCommon.hpp
+../include/wali/graph/wali/graph/GraphCommon.hpp
+map
+-
+
+../include/wali/graph/LinkEval.hpp
+
+../include/wali/graph/RegExp.hpp
+iostream
+-
+list
+-
+vector
+-
+set
+-
+wali/util/unordered_set.hpp
+../include/wali/graph/wali/util/unordered_set.hpp
+map
+-
+wali/SemElem.hpp
+../include/wali/graph/wali/SemElem.hpp
+wali/ref_ptr.hpp
+../include/wali/graph/wali/ref_ptr.hpp
+wali/HashMap.hpp
+../include/wali/graph/wali/HashMap.hpp
+wali/graph/GraphCommon.hpp
+../include/wali/graph/wali/graph/GraphCommon.hpp
+time.h
+-
+
+../include/wali/graph/SummaryGraph.hpp
+wali/HashMap.hpp
+../include/wali/graph/wali/HashMap.hpp
+wali/wfa/WFA.hpp
+../include/wali/graph/wali/wfa/WFA.hpp
+wali/graph/IntraGraph.hpp
+../include/wali/graph/wali/graph/IntraGraph.hpp
+wali/graph/InterGraph.hpp
+../include/wali/graph/wali/graph/InterGraph.hpp
+wali/wpds/ewpds/ERule.hpp
+../include/wali/graph/wali/wpds/ewpds/ERule.hpp
+
+../include/wali/hm_hash.hpp
+cstring
+-
+
+../include/wali/ref_ptr.hpp
+cstdio
+-
+cassert
+-
+climits
+-
+iostream
+-
+
+../include/wali/regex/AllRegex.hpp
+wali/regex/Regex.hpp
+../include/wali/regex/wali/regex/Regex.hpp
+wali/regex/Root.hpp
+../include/wali/regex/wali/regex/Root.hpp
+wali/regex/Concat.hpp
+../include/wali/regex/wali/regex/Concat.hpp
+wali/regex/Union.hpp
+../include/wali/regex/wali/regex/Union.hpp
+wali/regex/Star.hpp
+../include/wali/regex/wali/regex/Star.hpp
+
+../include/wali/regex/Concat.hpp
+wali/regex/Regex.hpp
+../include/wali/regex/wali/regex/Regex.hpp
+
+../include/wali/regex/Regex.hpp
+wali/Markable.hpp
+../include/wali/regex/wali/Markable.hpp
+wali/SemElem.hpp
+../include/wali/regex/wali/SemElem.hpp
+
+../include/wali/regex/Root.hpp
+wali/Common.hpp
+../include/wali/regex/wali/Common.hpp
+wali/regex/Regex.hpp
+../include/wali/regex/wali/regex/Regex.hpp
+
+../include/wali/regex/Star.hpp
+wali/regex/Regex.hpp
+../include/wali/regex/wali/regex/Regex.hpp
+
+../include/wali/regex/Union.hpp
+wali/regex/Regex.hpp
+../include/wali/regex/wali/regex/Regex.hpp
+list
+-
+
+../include/wali/util/ConfigurationVar.hpp
+iostream
+-
+cstdlib
+-
+string
+-
+map
+-
+boost/any.hpp
+-
+
+../include/wali/util/ParseArgv.hpp
+iostream
+-
+map
+-
+string
+-
+
+../include/wali/util/StringUtils.hpp
+string
+-
+vector
+-
+
+../include/wali/util/Timer.hpp
+iosfwd
+-
+string
+-
+iostream
+-
+cstdlib
+-
+cstdio
+-
+wali/Common.hpp
+../include/wali/util/wali/Common.hpp
+wali/Printable.hpp
+../include/wali/util/wali/Printable.hpp
+sys/times.h
+-
+windows.h
+-
+time.h
+-
+
+../include/wali/util/WeightChanger.hpp
+wali/Common.hpp
+../include/wali/util/wali/Common.hpp
+wali/SemElem.hpp
+../include/wali/util/wali/SemElem.hpp
+
+../include/wali/util/details/Partition.hpp
+ostream
+-
+set
+-
+map
+-
+sstream
+-
+cassert
+-
+list
+-
+boost/pending/disjoint_sets.hpp
+-
+boost/property_map/property_map.hpp
+-
+boost/unordered_set.hpp
+-
+boost/unordered_map.hpp
+-
+
+../include/wali/util/unordered_map.hpp
+boost/unordered_map.hpp
+-
+
+../include/wali/util/unordered_set.hpp
+boost/unordered_set.hpp
+-
+
+../include/wali/wfa/DecoratorTrans.hpp
+iostream
+-
+wali/Common.hpp
+../include/wali/wfa/wali/Common.hpp
+wali/Markable.hpp
+../include/wali/wfa/wali/Markable.hpp
+wali/Printable.hpp
+../include/wali/wfa/wali/Printable.hpp
+wali/SemElem.hpp
+../include/wali/wfa/wali/SemElem.hpp
+wali/KeyContainer.hpp
+../include/wali/wfa/wali/KeyContainer.hpp
+wali/wfa/ITrans.hpp
+../include/wali/wfa/wali/wfa/ITrans.hpp
+
+../include/wali/wfa/DeterminizeWeightGen.hpp
+wali/Key.hpp
+../include/wali/wfa/wali/Key.hpp
+wali/SemElem.hpp
+../include/wali/wfa/wali/SemElem.hpp
+set
+-
+map
+-
+
+../include/wali/wfa/ITrans.hpp
+iostream
+-
+wali/Common.hpp
+../include/wali/wfa/wali/Common.hpp
+wali/Markable.hpp
+../include/wali/wfa/wali/Markable.hpp
+wali/Printable.hpp
+../include/wali/wfa/wali/Printable.hpp
+wali/SemElem.hpp
+../include/wali/wfa/wali/SemElem.hpp
+wali/KeyContainer.hpp
+../include/wali/wfa/wali/KeyContainer.hpp
+wali/TaggedWeight.hpp
+../include/wali/wfa/wali/TaggedWeight.hpp
+wali/util/WeightChanger.hpp
+../include/wali/wfa/wali/util/WeightChanger.hpp
+
+../include/wali/wfa/State.hpp
+wali/Common.hpp
+../include/wali/wfa/wali/Common.hpp
+wali/Printable.hpp
+../include/wali/wfa/wali/Printable.hpp
+wali/Markable.hpp
+../include/wali/wfa/wali/Markable.hpp
+wali/Countable.hpp
+../include/wali/wfa/wali/Countable.hpp
+wali/SemElem.hpp
+../include/wali/wfa/wali/SemElem.hpp
+wali/wfa/TransSet.hpp
+../include/wali/wfa/wali/wfa/TransSet.hpp
+list
+-
+
+../include/wali/wfa/Trans.hpp
+iostream
+-
+wali/Common.hpp
+../include/wali/wfa/wali/Common.hpp
+wali/Printable.hpp
+../include/wali/wfa/wali/Printable.hpp
+wali/Countable.hpp
+../include/wali/wfa/wali/Countable.hpp
+wali/Markable.hpp
+../include/wali/wfa/wali/Markable.hpp
+wali/SemElem.hpp
+../include/wali/wfa/wali/SemElem.hpp
+wali/KeyContainer.hpp
+../include/wali/wfa/wali/KeyContainer.hpp
+wali/wfa/ITrans.hpp
+../include/wali/wfa/wali/wfa/ITrans.hpp
+
+../include/wali/wfa/TransFunctor.hpp
+iostream
+-
+map
+-
+set
+-
+wali/HashMap.hpp
+../include/wali/wfa/wali/HashMap.hpp
+wali/wfa/TransSet.hpp
+../include/wali/wfa/wali/wfa/TransSet.hpp
+
+../include/wali/wfa/TransSet.hpp
+wali/Common.hpp
+../include/wali/wfa/wali/Common.hpp
+wali/Printable.hpp
+../include/wali/wfa/wali/Printable.hpp
+wali/wfa/ITrans.hpp
+../include/wali/wfa/wali/wfa/ITrans.hpp
+boost/function.hpp
+-
+list
+-
+set
+-
+
+../include/wali/wfa/WFA.hpp
+boost/function.hpp
+-
+boost/ref.hpp
+-
+boost/type_traits.hpp
+-
+boost/utility/enable_if.hpp
+-
+wali/Common.hpp
+../include/wali/wfa/wali/Common.hpp
+wali/Printable.hpp
+../include/wali/wfa/wali/Printable.hpp
+wali/SemElem.hpp
+../include/wali/wfa/wali/SemElem.hpp
+wali/HashMap.hpp
+../include/wali/wfa/wali/HashMap.hpp
+wali/KeyContainer.hpp
+../include/wali/wfa/wali/KeyContainer.hpp
+wali/Progress.hpp
+../include/wali/wfa/wali/Progress.hpp
+wali/domains/SemElemSet.hpp
+../include/wali/wfa/wali/domains/SemElemSet.hpp
+wali/wfa/WeightMaker.hpp
+../include/wali/wfa/wali/wfa/WeightMaker.hpp
+wali/wfa/Trans.hpp
+../include/wali/wfa/wali/wfa/Trans.hpp
+wali/wfa/TransSet.hpp
+../include/wali/wfa/wali/wfa/TransSet.hpp
+wali/wfa/DeterminizeWeightGen.hpp
+../include/wali/wfa/wali/wfa/DeterminizeWeightGen.hpp
+iostream
+-
+vector
+-
+list
+-
+set
+-
+map
+-
+
+../include/wali/wfa/WeightMaker.hpp
+wali/Common.hpp
+../include/wali/wfa/wali/Common.hpp
+wali/SemElem.hpp
+../include/wali/wfa/wali/SemElem.hpp
+wali/wfa/ITrans.hpp
+../include/wali/wfa/wali/wfa/ITrans.hpp
+
+../include/wali/wfa/epr/EPA.hpp
+wali/wfa/WFA.hpp
+../include/wali/wfa/epr/wali/wfa/WFA.hpp
+wali/wfa/epr/FunctionalWeight.hpp
+../include/wali/wfa/epr/wali/wfa/epr/FunctionalWeight.hpp
+wali/wfa/epr/FunctionalWeightMaker.hpp
+../include/wali/wfa/epr/wali/wfa/epr/FunctionalWeightMaker.hpp
+map
+-
+list
+-
+
+../include/wali/wfa/epr/FunctionalWeight.hpp
+wali/wfa/ITrans.hpp
+../include/wali/wfa/epr/wali/wfa/ITrans.hpp
+wali/SemElem.hpp
+../include/wali/wfa/epr/wali/SemElem.hpp
+
+../include/wali/wfa/epr/FunctionalWeightMaker.hpp
+wali/Common.hpp
+../include/wali/wfa/epr/wali/Common.hpp
+wali/SemElem.hpp
+../include/wali/wfa/epr/wali/SemElem.hpp
+wali/wfa/WeightMaker.hpp
+../include/wali/wfa/epr/wali/wfa/WeightMaker.hpp
+
+../include/wali/wfa/epr/StatePriorityWorklist.hpp
+wali/Common.hpp
+../include/wali/wfa/epr/wali/Common.hpp
+wali/Worklist.hpp
+../include/wali/wfa/epr/wali/Worklist.hpp
+wali/wfa/State.hpp
+../include/wali/wfa/epr/wali/wfa/State.hpp
+set
+-
+map
+-
+
+../include/wali/witness/CalculatingVisitor.hpp
+stack
+-
+map
+-
+wali/Common.hpp
+../include/wali/witness/wali/Common.hpp
+wali/witness/Visitor.hpp
+../include/wali/witness/wali/witness/Visitor.hpp
+wali/witness/CalculatingVisitor.hpp
+../include/wali/witness/wali/witness/CalculatingVisitor.hpp
+wali/witness/WitnessExtend.hpp
+../include/wali/witness/wali/witness/WitnessExtend.hpp
+wali/witness/WitnessCombine.hpp
+../include/wali/witness/wali/witness/WitnessCombine.hpp
+wali/witness/WitnessMerge.hpp
+../include/wali/witness/wali/witness/WitnessMerge.hpp
+wali/witness/WitnessRule.hpp
+../include/wali/witness/wali/witness/WitnessRule.hpp
+wali/witness/WitnessTrans.hpp
+../include/wali/witness/wali/witness/WitnessTrans.hpp
+
+../include/wali/witness/Visitable.hpp
+wali/Common.hpp
+../include/wali/witness/wali/Common.hpp
+
+../include/wali/witness/Visitor.hpp
+wali/Common.hpp
+../include/wali/witness/wali/Common.hpp
+
+../include/wali/witness/VisitorDot.hpp
+wali/Common.hpp
+../include/wali/witness/wali/Common.hpp
+wali/ref_ptr.hpp
+../include/wali/witness/wali/ref_ptr.hpp
+wali/witness/Witness.hpp
+../include/wali/witness/wali/witness/Witness.hpp
+wali/witness/Visitor.hpp
+../include/wali/witness/wali/witness/Visitor.hpp
+iostream
+-
+string
+-
+
+../include/wali/witness/VisitorPrinter.hpp
+wali/Common.hpp
+../include/wali/witness/wali/Common.hpp
+wali/ref_ptr.hpp
+../include/wali/witness/wali/ref_ptr.hpp
+wali/witness/Visitor.hpp
+../include/wali/witness/wali/witness/Visitor.hpp
+iostream
+-
+string
+-
+
+../include/wali/witness/Witness.hpp
+wali/Common.hpp
+../include/wali/witness/wali/Common.hpp
+wali/Markable.hpp
+../include/wali/witness/wali/Markable.hpp
+wali/ref_ptr.hpp
+../include/wali/witness/wali/ref_ptr.hpp
+wali/SemElem.hpp
+../include/wali/witness/wali/SemElem.hpp
+wali/witness/Visitable.hpp
+../include/wali/witness/wali/witness/Visitable.hpp
+
+../include/wali/witness/WitnessCombine.hpp
+wali/Common.hpp
+../include/wali/witness/wali/Common.hpp
+wali/witness/Witness.hpp
+../include/wali/witness/wali/witness/Witness.hpp
+list
+-
+
+../include/wali/witness/WitnessExtend.hpp
+wali/Common.hpp
+../include/wali/witness/wali/Common.hpp
+wali/witness/Witness.hpp
+../include/wali/witness/wali/witness/Witness.hpp
+
+../include/wali/witness/WitnessLengthWorklist.hpp
+wali/Common.hpp
+../include/wali/witness/wali/Common.hpp
+wali/witness/Witness.hpp
+../include/wali/witness/wali/witness/Witness.hpp
+wali/PriorityWorklist.hpp
+../include/wali/witness/wali/PriorityWorklist.hpp
+
+../include/wali/witness/WitnessMerge.hpp
+wali/Common.hpp
+../include/wali/witness/wali/Common.hpp
+wali/witness/Witness.hpp
+../include/wali/witness/wali/witness/Witness.hpp
+wali/witness/WitnessMergeFn.hpp
+../include/wali/witness/wali/witness/WitnessMergeFn.hpp
+
+../include/wali/witness/WitnessMergeFn.hpp
+wali/Common.hpp
+../include/wali/witness/wali/Common.hpp
+wali/SemElem.hpp
+../include/wali/witness/wali/SemElem.hpp
+wali/MergeFn.hpp
+../include/wali/witness/wali/MergeFn.hpp
+wali/witness/Witness.hpp
+../include/wali/witness/wali/witness/Witness.hpp
+
+../include/wali/witness/WitnessRule.hpp
+wali/Common.hpp
+../include/wali/witness/wali/Common.hpp
+wali/Printable.hpp
+../include/wali/witness/wali/Printable.hpp
+wali/Key.hpp
+../include/wali/witness/wali/Key.hpp
+wali/witness/Witness.hpp
+../include/wali/witness/wali/witness/Witness.hpp
+wali/wpds/Rule.hpp
+../include/wali/witness/wali/wpds/Rule.hpp
+
+../include/wali/witness/WitnessTrans.hpp
+wali/Common.hpp
+../include/wali/witness/wali/Common.hpp
+wali/witness/Witness.hpp
+../include/wali/witness/wali/witness/Witness.hpp
+wali/wfa/ITrans.hpp
+../include/wali/witness/wali/wfa/ITrans.hpp
+wali/wfa/Trans.hpp
+../include/wali/witness/wali/wfa/Trans.hpp
+
+../include/wali/witness/WitnessWrapper.hpp
+wali/Common.hpp
+../include/wali/witness/wali/Common.hpp
+wali/MergeFn.hpp
+../include/wali/witness/wali/MergeFn.hpp
+wali/wpds/Wrapper.hpp
+../include/wali/witness/wali/wpds/Wrapper.hpp
+
+../include/wali/wpds/Config.hpp
+list
+-
+string
+-
+wali/Common.hpp
+../include/wali/wpds/wali/Common.hpp
+wali/Printable.hpp
+../include/wali/wpds/wali/Printable.hpp
+wali/KeyContainer.hpp
+../include/wali/wpds/wali/KeyContainer.hpp
+wali/wpds/Rule.hpp
+../include/wali/wpds/wali/wpds/Rule.hpp
+
+../include/wali/wpds/DebugWPDS.hpp
+wali/wpds/WPDS.hpp
+../include/wali/wpds/wali/wpds/WPDS.hpp
+
+../include/wali/wpds/GenKeySource.hpp
+wali/Common.hpp
+../include/wali/wpds/wali/Common.hpp
+wali/KeySource.hpp
+../include/wali/wpds/wali/KeySource.hpp
+
+../include/wali/wpds/Rule.hpp
+wali/Common.hpp
+../include/wali/wpds/wali/Common.hpp
+wali/Printable.hpp
+../include/wali/wpds/wali/Printable.hpp
+wali/Countable.hpp
+../include/wali/wpds/wali/Countable.hpp
+wali/Markable.hpp
+../include/wali/wpds/wali/Markable.hpp
+wali/SemElem.hpp
+../include/wali/wpds/wali/SemElem.hpp
+wali/ref_ptr.hpp
+../include/wali/wpds/wali/ref_ptr.hpp
+
+../include/wali/wpds/RuleFunctor.hpp
+wali/Common.hpp
+../include/wali/wpds/wali/Common.hpp
+wali/ref_ptr.hpp
+../include/wali/wpds/wali/ref_ptr.hpp
+iostream
+-
+set
+-
+
+../include/wali/wpds/WPDS.hpp
+wali/Common.hpp
+../include/wali/wpds/wali/Common.hpp
+wali/Printable.hpp
+../include/wali/wpds/wali/Printable.hpp
+wali/HashMap.hpp
+../include/wali/wpds/wali/HashMap.hpp
+wali/KeyContainer.hpp
+../include/wali/wpds/wali/KeyContainer.hpp
+wali/SemElem.hpp
+../include/wali/wpds/wali/SemElem.hpp
+wali/Worklist.hpp
+../include/wali/wpds/wali/Worklist.hpp
+wali/wfa/WFA.hpp
+../include/wali/wpds/wali/wfa/WFA.hpp
+wali/wfa/TransFunctor.hpp
+../include/wali/wpds/wali/wfa/TransFunctor.hpp
+wali/wpds/Wrapper.hpp
+../include/wali/wpds/wali/wpds/Wrapper.hpp
+iostream
+-
+set
+-
+
+../include/wali/wpds/Wrapper.hpp
+wali/Common.hpp
+../include/wali/wpds/wali/Common.hpp
+wali/Countable.hpp
+../include/wali/wpds/wali/Countable.hpp
+wali/SemElem.hpp
+../include/wali/wpds/wali/SemElem.hpp
+wali/MergeFn.hpp
+../include/wali/wpds/wali/MergeFn.hpp
+
+../include/wali/wpds/ewpds/ERule.hpp
+wali/Common.hpp
+../include/wali/wpds/ewpds/wali/Common.hpp
+wali/MergeFn.hpp
+../include/wali/wpds/ewpds/wali/MergeFn.hpp
+wali/wpds/Rule.hpp
+../include/wali/wpds/ewpds/wali/wpds/Rule.hpp
+
+../include/wali/wpds/ewpds/ETrans.hpp
+wali/MergeFn.hpp
+../include/wali/wpds/ewpds/wali/MergeFn.hpp
+wali/wfa/ITrans.hpp
+../include/wali/wpds/ewpds/wali/wfa/ITrans.hpp
+wali/wfa/DecoratorTrans.hpp
+../include/wali/wpds/ewpds/wali/wfa/DecoratorTrans.hpp
+wali/wpds/ewpds/ERule.hpp
+../include/wali/wpds/ewpds/wali/wpds/ewpds/ERule.hpp
+
+../include/wali/wpds/ewpds/EWPDS.hpp
+wali/Common.hpp
+../include/wali/wpds/ewpds/wali/Common.hpp
+wali/SemElemPair.hpp
+../include/wali/wpds/ewpds/wali/SemElemPair.hpp
+wali/IMergeFn.hpp
+../include/wali/wpds/ewpds/wali/IMergeFn.hpp
+wali/wpds/WPDS.hpp
+../include/wali/wpds/ewpds/wali/wpds/WPDS.hpp
+set
+-
+
+../include/wali/wpds/fwpds/FWPDS.hpp
+wali/Common.hpp
+../include/wali/wpds/fwpds/wali/Common.hpp
+wali/wpds/WPDS.hpp
+../include/wali/wpds/fwpds/wali/wpds/WPDS.hpp
+wali/wpds/Wrapper.hpp
+../include/wali/wpds/fwpds/wali/wpds/Wrapper.hpp
+wali/wpds/ewpds/EWPDS.hpp
+../include/wali/wpds/fwpds/wali/wpds/ewpds/EWPDS.hpp
+wali/graph/GraphCommon.hpp
+../include/wali/wpds/fwpds/wali/graph/GraphCommon.hpp
+wali/graph/InterGraph.hpp
+../include/wali/wpds/fwpds/wali/graph/InterGraph.hpp
+
+../include/wali/wpds/fwpds/LazyTrans.hpp
+wali/Common.hpp
+../include/wali/wpds/fwpds/wali/Common.hpp
+wali/wfa/DecoratorTrans.hpp
+../include/wali/wpds/fwpds/wali/wfa/DecoratorTrans.hpp
+wali/graph/InterGraph.hpp
+../include/wali/wpds/fwpds/wali/graph/InterGraph.hpp
+wali/wpds/ewpds/ETrans.hpp
+../include/wali/wpds/fwpds/wali/wpds/ewpds/ETrans.hpp
+
+../include/wali/wpds/fwpds/SWPDS.hpp
+map
+-
+wali/Common.hpp
+../include/wali/wpds/fwpds/wali/Common.hpp
+wali/wpds/RuleFunctor.hpp
+../include/wali/wpds/fwpds/wali/wpds/RuleFunctor.hpp
+wali/wpds/ewpds/EWPDS.hpp
+../include/wali/wpds/fwpds/wali/wpds/ewpds/EWPDS.hpp
+wali/wpds/fwpds/FWPDS.hpp
+../include/wali/wpds/fwpds/wali/wpds/fwpds/FWPDS.hpp
+wali/graph/GraphCommon.hpp
+../include/wali/wpds/fwpds/wali/graph/GraphCommon.hpp
+wali/graph/InterGraph.hpp
+../include/wali/wpds/fwpds/wali/graph/InterGraph.hpp
+wali/graph/Graph.hpp
+../include/wali/wpds/fwpds/wali/graph/Graph.hpp
+wali/graph/SummaryGraph.hpp
+../include/wali/wpds/fwpds/wali/graph/SummaryGraph.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Common.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Common.hpp
+iostream
+-
+cstdlib
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Exception.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Common.hpp
+wali/Exception.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Exception.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/IMergeFn.cpp
+wali/IMergeFn.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/IMergeFn.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/IntSource.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Common.hpp
+wali/IntSource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/IntSource.hpp
+wali/hm_hash.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/hm_hash.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Key.cpp
+memory
+-
+wali/Key.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Key.hpp
+wali/KeySource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/KeySource.hpp
+wali/KeySpace.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/KeySpace.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeyOrderWorklist.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Common.hpp
+wali/KeyOrderWorklist.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/KeyOrderWorklist.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/wfa/Trans.hpp
+wali/KeyContainer.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/KeyContainer.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeyPairSource.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Common.hpp
+wali/KeyPairSource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/KeyPairSource.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeySetSource.cpp
+wali/KeySetSource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/KeySetSource.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeySpace.cpp
+sstream
+-
+cassert
+-
+cstring
+-
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Common.hpp
+wali/KeySpace.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/KeySpace.hpp
+wali/KeySource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/KeySource.hpp
+wali/StringSource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/StringSource.hpp
+wali/IntSource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/IntSource.hpp
+wali/KeyPairSource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/KeyPairSource.hpp
+wali/KeySetSource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/KeySetSource.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/LongestSaturatingPathSemiring.cpp
+wali/LongestSaturatingPathSemiring.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/LongestSaturatingPathSemiring.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Markable.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Common.hpp
+wali/Markable.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Markable.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/MergeFn.cpp
+wali/MergeFn.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/MergeFn.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/MergeFnFactory.cpp
+wali/MergeFnFactory.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/MergeFnFactory.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Printable.cpp
+wali/Printable.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Printable.hpp
+sstream
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/RankedWorklist.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Common.hpp
+wali/RankedWorklist.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/RankedWorklist.hpp
+wali/witness/Witness.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/witness/Witness.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Reach.cpp
+wali/Reach.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Reach.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/SemElem.cpp
+wali/SemElem.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/SemElem.hpp
+cxxabi.h
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/SemElemPair.cpp
+wali/SemElemPair.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/SemElemPair.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/SemElemTensor.cpp
+wali/SemElemTensor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/SemElemTensor.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/ShortestPathSemiring.cpp
+wali/ShortestPathSemiring.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/ShortestPathSemiring.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/ShortestPathWorklist.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Common.hpp
+wali/ShortestPathWorklist.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/ShortestPathWorklist.hpp
+wali/ShortestPathSemiring.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/ShortestPathSemiring.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/wfa/Trans.hpp
+climits
+-
+cstdlib
+-
+iostream
+-
+typeinfo
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/StringSource.cpp
+wali/StringSource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/StringSource.hpp
+wali/hm_hash.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/hm_hash.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/TotalOrderWorklist.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Common.hpp
+wali/TotalOrderWorklist.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/TotalOrderWorklist.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/wfa/Trans.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/WeightFactory.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/Common.hpp
+wali/WeightFactory.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wali/WeightFactory.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/domains/RepresentativeString.cpp
+wali/domains/RepresentativeString.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/domains/wali/domains/RepresentativeString.hpp
+utility
+-
+boost/functional/hash.hpp
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/domains/SemElemSet.cpp
+wali/domains/SemElemSet.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/domains/wali/domains/SemElemSet.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/Experimental.cpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/Functional.cpp
+wali/graph/Functional.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/Functional.hpp
+wali/graph/IntraGraph.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/IntraGraph.hpp
+boost/cast.hpp
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/Graph.cpp
+wali/graph/Graph.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/Graph.hpp
+cassert
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/InterGraph.cpp
+wali/graph/InterGraph.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/InterGraph.hpp
+wali/graph/IntraGraph.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/IntraGraph.hpp
+wali/graph/RegExp.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/RegExp.hpp
+wali/graph/Functional.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/Functional.hpp
+wali/util/Timer.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/util/Timer.hpp
+math.h
+-
+stdlib.h
+-
+time.h
+-
+fstream
+-
+iostream
+-
+sstream
+-
+iomanip
+-
+sstream
+-
+boost/cast.hpp
+-
+wali/SemElemTensor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/SemElemTensor.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/IntraGraph.cpp
+wali/util/Timer.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/util/Timer.hpp
+wali/graph/IntraGraph.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/IntraGraph.hpp
+wali/graph/LinkEval.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/LinkEval.hpp
+wali/graph/GraphCommon.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/GraphCommon.hpp
+iostream
+-
+sstream
+-
+fstream
+-
+boost/cast.hpp
+-
+Experimental.cpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/Experimental.cpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/LinkEval.cpp
+wali/graph/LinkEval.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/LinkEval.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/RegExp.cpp
+wali/graph/RegExp.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/RegExp.hpp
+wali/graph/GraphCommon.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/GraphCommon.hpp
+math.h
+-
+algorithm
+-
+iterator
+-
+cassert
+-
+sstream
+-
+wali/SemElemTensor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/SemElemTensor.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/SummaryGraph.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/Common.hpp
+wali/util/Timer.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/util/Timer.hpp
+wali/graph/SummaryGraph.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/SummaryGraph.hpp
+wali/graph/Graph.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/graph/Graph.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/wfa/Trans.hpp
+wali/wfa/State.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/wfa/State.hpp
+wali/wfa/TransFunctor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/wfa/TransFunctor.hpp
+wali/wpds/fwpds/FWPDS.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/wpds/fwpds/FWPDS.hpp
+wali/wpds/fwpds/LazyTrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/wpds/fwpds/LazyTrans.hpp
+wali/wpds/GenKeySource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/wali/wpds/GenKeySource.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Concat.cpp
+cassert
+-
+wali/regex/Concat.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/wali/regex/Concat.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Regex.cpp
+wali/hm_hash.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/wali/hm_hash.hpp
+wali/regex/Regex.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/wali/regex/Regex.hpp
+wali/regex/Root.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/wali/regex/Root.hpp
+wali/regex/Concat.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/wali/regex/Concat.hpp
+wali/regex/Union.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/wali/regex/Union.hpp
+wali/regex/Star.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/wali/regex/Star.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Root.cpp
+wali/regex/Root.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/wali/regex/Root.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Star.cpp
+wali/regex/Star.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/wali/regex/Star.hpp
+cassert
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Union.cpp
+wali/regex/Union.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/wali/regex/Union.hpp
+cassert
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/util/ParseArgv.cpp
+wali/util/ParseArgv.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/util/wali/util/ParseArgv.hpp
+cstdlib
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/util/StringUtils.cpp
+wali/util/StringUtils.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/util/wali/util/StringUtils.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/util/Timer.cpp
+iomanip
+-
+iostream
+-
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/util/wali/Common.hpp
+wali/util/Timer.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/util/wali/util/Timer.hpp
+unistd.h
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/util/details/Partition.cpp
+wali/util/details/Partition.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/util/details/wali/util/details/Partition.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/DeterminizeWeightGen.cpp
+wali/wfa/DeterminizeWeightGen.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/DeterminizeWeightGen.hpp
+wali/wfa/WFA.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/WFA.hpp
+wali/wfa/State.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/State.hpp
+wali/domains/KeyedSemElemSet.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/domains/KeyedSemElemSet.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/ITrans.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/Common.hpp
+wali/wfa/ITrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/ITrans.hpp
+iostream
+-
+sstream
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/State.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/Common.hpp
+wali/wfa/State.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/State.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/Trans.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/Trans.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/Common.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/Trans.hpp
+iostream
+-
+sstream
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/TransFunctor.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/Common.hpp
+wali/wfa/TransFunctor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/TransFunctor.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/Trans.hpp
+wali/wfa/WFA.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/WFA.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/TransSet.cpp
+wali/wfa/ITrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/ITrans.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/Trans.hpp
+wali/wfa/TransSet.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/TransSet.hpp
+wali/wfa/TransFunctor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/TransFunctor.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA-eclose.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/Common.hpp
+wali/DefaultWorklist.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/DefaultWorklist.hpp
+wali/wfa/WFA.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/WFA.hpp
+wali/wfa/State.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/State.hpp
+wali/wfa/TransFunctor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/TransFunctor.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/Trans.hpp
+wali/wfa/WeightMaker.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/WeightMaker.hpp
+wali/regex/AllRegex.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/regex/AllRegex.hpp
+wali/wpds/GenKeySource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wpds/GenKeySource.hpp
+wali/wfa/DeterminizeWeightGen.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/DeterminizeWeightGen.hpp
+wali/wpds/WPDS.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wpds/WPDS.hpp
+wali/KeyPairSource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/KeyPairSource.hpp
+wali/wpds/GenKeySource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wpds/GenKeySource.hpp
+wali/domains/SemElemSet.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/domains/SemElemSet.hpp
+wali/wpds/fwpds/FWPDS.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wpds/fwpds/FWPDS.hpp
+algorithm
+-
+iostream
+-
+vector
+-
+stack
+-
+iterator
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA-path_summary.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/Common.hpp
+wali/DefaultWorklist.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/DefaultWorklist.hpp
+wali/wfa/WFA.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/WFA.hpp
+wali/wfa/State.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/State.hpp
+wali/wfa/TransFunctor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/TransFunctor.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/Trans.hpp
+wali/wfa/WeightMaker.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/WeightMaker.hpp
+wali/regex/AllRegex.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/regex/AllRegex.hpp
+wali/wpds/GenKeySource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wpds/GenKeySource.hpp
+wali/wfa/DeterminizeWeightGen.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/DeterminizeWeightGen.hpp
+wali/wpds/WPDS.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wpds/WPDS.hpp
+wali/wpds/fwpds/FWPDS.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wpds/fwpds/FWPDS.hpp
+wali/wpds/fwpds/LazyTrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wpds/fwpds/LazyTrans.hpp
+wali/graph/RegExp.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/graph/RegExp.hpp
+wali/util/ConfigurationVar.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/util/ConfigurationVar.hpp
+wali/graph/GraphCommon.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/graph/GraphCommon.hpp
+wali/witness/Witness.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/witness/Witness.hpp
+wali/domains/ReversedSemElem.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/domains/ReversedSemElem.hpp
+algorithm
+-
+iostream
+-
+vector
+-
+stack
+-
+iterator
+-
+fstream
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/Common.hpp
+wali/DefaultWorklist.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/DefaultWorklist.hpp
+wali/wfa/WFA.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/WFA.hpp
+wali/wfa/State.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/State.hpp
+wali/wfa/TransFunctor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/TransFunctor.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/Trans.hpp
+wali/wfa/WeightMaker.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/WeightMaker.hpp
+wali/regex/AllRegex.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/regex/AllRegex.hpp
+wali/wpds/GenKeySource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wpds/GenKeySource.hpp
+wali/wfa/DeterminizeWeightGen.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/DeterminizeWeightGen.hpp
+wali/wpds/WPDS.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wpds/WPDS.hpp
+wali/wpds/fwpds/FWPDS.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wpds/fwpds/FWPDS.hpp
+wali/wpds/fwpds/LazyTrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wpds/fwpds/LazyTrans.hpp
+wali/graph/RegExp.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/graph/RegExp.hpp
+wali/util/ConfigurationVar.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/util/ConfigurationVar.hpp
+algorithm
+-
+iostream
+-
+vector
+-
+stack
+-
+iterator
+-
+fstream
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WeightMaker.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/Common.hpp
+wali/SemElemPair.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/SemElemPair.hpp
+wali/wfa/WeightMaker.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/wali/wfa/WeightMaker.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/EPA.cpp
+wali/TaggedWeight.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/wali/TaggedWeight.hpp
+wali/wfa/State.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/wali/wfa/State.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/wali/wfa/Trans.hpp
+wali/wfa/epr/EPA.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/wali/wfa/epr/EPA.hpp
+wali/wfa/epr/StatePriorityWorklist.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/wali/wfa/epr/StatePriorityWorklist.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/FunctionalWeight.cpp
+wali/wfa/epr/FunctionalWeight.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/wali/wfa/epr/FunctionalWeight.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/FunctionalWeightMaker.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/wali/Common.hpp
+wali/SemElemPair.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/wali/SemElemPair.hpp
+wali/wfa/epr/FunctionalWeightMaker.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/wali/wfa/epr/FunctionalWeightMaker.hpp
+wali/wfa/epr/FunctionalWeight.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/wali/wfa/epr/FunctionalWeight.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/wali/wfa/Trans.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/CalculatingVisitor.cpp
+wali/witness/CalculatingVisitor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/CalculatingVisitor.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/Visitor.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/Common.hpp
+wali/witness/Visitor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/Visitor.hpp
+wali/witness/Witness.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/Witness.hpp
+wali/witness/WitnessExtend.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessExtend.hpp
+wali/witness/WitnessCombine.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessCombine.hpp
+wali/witness/WitnessTrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessTrans.hpp
+wali/witness/WitnessRule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessRule.hpp
+wali/witness/WitnessMerge.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessMerge.hpp
+iostream
+-
+cassert
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/VisitorDot.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/Common.hpp
+wali/witness/VisitorDot.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/VisitorDot.hpp
+wali/witness/Witness.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/Witness.hpp
+wali/witness/WitnessExtend.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessExtend.hpp
+wali/witness/WitnessCombine.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessCombine.hpp
+wali/witness/WitnessRule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessRule.hpp
+wali/witness/WitnessTrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessTrans.hpp
+wali/witness/WitnessMerge.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessMerge.hpp
+fstream
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/VisitorPrinter.cpp
+wali/witness/VisitorPrinter.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/VisitorPrinter.hpp
+wali/witness/Witness.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/Witness.hpp
+wali/witness/WitnessExtend.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessExtend.hpp
+wali/witness/WitnessCombine.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessCombine.hpp
+wali/witness/WitnessTrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessTrans.hpp
+wali/witness/WitnessRule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessRule.hpp
+wali/witness/WitnessMerge.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessMerge.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/Witness.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/Common.hpp
+wali/witness/Witness.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/Witness.hpp
+wali/witness/WitnessExtend.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessExtend.hpp
+wali/witness/WitnessCombine.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessCombine.hpp
+wali/witness/Visitor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/Visitor.hpp
+wali/witness/VisitorPrinter.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/VisitorPrinter.hpp
+typeinfo
+-
+map
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessCombine.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/Common.hpp
+wali/witness/WitnessCombine.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessCombine.hpp
+wali/witness/Visitor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/Visitor.hpp
+wali/witness/VisitorDot.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/VisitorDot.hpp
+iostream
+-
+fstream
+-
+algorithm
+-
+typeinfo
+-
+iterator
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessExtend.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/Common.hpp
+wali/witness/WitnessExtend.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessExtend.hpp
+wali/witness/Visitor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/Visitor.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessLengthWorklist.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/Common.hpp
+wali/witness/WitnessLengthWorklist.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessLengthWorklist.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/wfa/Trans.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessMerge.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/Common.hpp
+wali/witness/WitnessMerge.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessMerge.hpp
+wali/witness/WitnessMergeFn.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessMergeFn.hpp
+wali/witness/Visitor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/Visitor.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessMergeFn.cpp
+wali/witness/WitnessMerge.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessMerge.hpp
+wali/witness/WitnessMergeFn.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessMergeFn.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessRule.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/Common.hpp
+wali/witness/WitnessRule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessRule.hpp
+wali/witness/Visitor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/Visitor.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessTrans.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/Common.hpp
+wali/witness/WitnessTrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessTrans.hpp
+wali/witness/Visitor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/Visitor.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessWrapper.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/Common.hpp
+wali/wpds/ewpds/ERule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/wpds/ewpds/ERule.hpp
+wali/witness/WitnessWrapper.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessWrapper.hpp
+wali/witness/WitnessTrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessTrans.hpp
+wali/witness/WitnessRule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessRule.hpp
+wali/witness/WitnessMergeFn.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/wali/witness/WitnessMergeFn.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Config.cpp
+sstream
+-
+wali/wpds/Config.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/Config.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/DebugWPDS.cpp
+fstream
+-
+sstream
+-
+wali/wpds/DebugWPDS.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/DebugWPDS.hpp
+wali/wpds/Config.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/Config.hpp
+wali/wfa/WFA.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wfa/WFA.hpp
+wali/wfa/State.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wfa/State.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wfa/Trans.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/GenKeySource.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/Common.hpp
+wali/wpds/GenKeySource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/GenKeySource.hpp
+wali/hm_hash.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/hm_hash.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Rule.cpp
+sstream
+-
+cassert
+-
+wali/wpds/Rule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/Rule.hpp
+wali/wpds/Config.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/Config.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/RuleFunctor.cpp
+wali/wpds/RuleFunctor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/RuleFunctor.hpp
+wali/wpds/Rule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/Rule.hpp
+wali/wpds/WPDS.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/WPDS.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/WPDS.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/Common.hpp
+wali/SemElem.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/SemElem.hpp
+wali/Worklist.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/Worklist.hpp
+wali/KeyPairSource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/KeyPairSource.hpp
+wali/wfa/State.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wfa/State.hpp
+wali/wfa/TransFunctor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wfa/TransFunctor.hpp
+wali/wfa/TransSet.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wfa/TransSet.hpp
+wali/wpds/WPDS.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/WPDS.hpp
+wali/wpds/Config.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/Config.hpp
+wali/wpds/Rule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/Rule.hpp
+wali/wpds/RuleFunctor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/RuleFunctor.hpp
+wali/wpds/Wrapper.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/Wrapper.hpp
+wali/wpds/GenKeySource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/GenKeySource.hpp
+wali/DefaultWorklist.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/DefaultWorklist.hpp
+iostream
+-
+cassert
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Wrapper.cpp
+wali/wpds/Wrapper.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/Wrapper.hpp
+wali/wfa/ITrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wfa/ITrans.hpp
+wali/wpds/Rule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/Rule.hpp
+wali/wpds/ewpds/ERule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/wali/wpds/ewpds/ERule.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/ERule.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/Common.hpp
+wali/SemElemPair.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/SemElemPair.hpp
+wali/wpds/Config.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wpds/Config.hpp
+wali/wpds/ewpds/ERule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wpds/ewpds/ERule.hpp
+sstream
+-
+list
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/ETrans.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/Common.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wfa/Trans.hpp
+wali/wpds/ewpds/ETrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wpds/ewpds/ETrans.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/EWPDS.cpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/Common.hpp
+wali/SemElem.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/SemElem.hpp
+wali/Worklist.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/Worklist.hpp
+wali/KeySource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/KeySource.hpp
+wali/KeyPairSource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/KeyPairSource.hpp
+wali/wfa/ITrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wfa/ITrans.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wfa/Trans.hpp
+wali/wfa/State.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wfa/State.hpp
+wali/wfa/TransFunctor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wfa/TransFunctor.hpp
+wali/wfa/TransSet.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wfa/TransSet.hpp
+wali/wpds/Config.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wpds/Config.hpp
+wali/wpds/RuleFunctor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wpds/RuleFunctor.hpp
+wali/wpds/Wrapper.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wpds/Wrapper.hpp
+wali/wpds/GenKeySource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wpds/GenKeySource.hpp
+wali/wpds/ewpds/ERule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wpds/ewpds/ERule.hpp
+wali/wpds/ewpds/EWPDS.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wpds/ewpds/EWPDS.hpp
+wali/wpds/ewpds/ETrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/wali/wpds/ewpds/ETrans.hpp
+iostream
+-
+cassert
+-
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/FWPDS.cpp
+wali/Worklist.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/Worklist.hpp
+wali/Common.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/Common.hpp
+wali/HashMap.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/HashMap.hpp
+wali/SemElem.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/SemElem.hpp
+wali/KeyPairSource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/KeyPairSource.hpp
+wali/util/Timer.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/util/Timer.hpp
+wali/wfa/WFA.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wfa/WFA.hpp
+wali/wfa/State.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wfa/State.hpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wfa/Trans.hpp
+wali/wfa/TransSet.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wfa/TransSet.hpp
+wali/wfa/TransFunctor.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wfa/TransFunctor.hpp
+wali/wpds/Config.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wpds/Config.hpp
+wali/wpds/GenKeySource.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wpds/GenKeySource.hpp
+wali/wpds/Rule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wpds/Rule.hpp
+wali/wpds/ewpds/ERule.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wpds/ewpds/ERule.hpp
+wali/wpds/ewpds/ETrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wpds/ewpds/ETrans.hpp
+wali/wpds/fwpds/FWPDS.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wpds/fwpds/FWPDS.hpp
+wali/wpds/fwpds/LazyTrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wpds/fwpds/LazyTrans.hpp
+wali/graph/RegExp.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/graph/RegExp.hpp
+wali/graph/InterGraph.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/graph/InterGraph.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/LazyTrans.cpp
+wali/wfa/Trans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wfa/Trans.hpp
+wali/wpds/Config.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wpds/Config.hpp
+wali/wpds/fwpds/LazyTrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wpds/fwpds/LazyTrans.hpp
+
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/SWPDS.cpp
+wali/wfa/State.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wfa/State.hpp
+wali/wpds/ewpds/ETrans.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wpds/ewpds/ETrans.hpp
+wali/wpds/fwpds/SWPDS.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/wpds/fwpds/SWPDS.hpp
+wali/graph/GraphCommon.hpp
+/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/wali/graph/GraphCommon.hpp
+

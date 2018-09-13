@@ -2,7 +2,7 @@
  * @author Nicholas Kidd
  */
 
-#include "Reach.hpp"
+#include "wali/Reach.hpp"
 
 namespace wali {
 

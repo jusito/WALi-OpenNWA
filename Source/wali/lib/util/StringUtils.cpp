@@ -2,7 +2,7 @@
  * @author Nicholas Kidd
  */
 
-#include "StringUtils.hpp"
+#include "wali/util/StringUtils.hpp"
 
 namespace wali
 {
