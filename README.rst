@@ -4,9 +4,7 @@ WALi and OpenNWA
 TODO:
 -----
 
-* Clean up CMake Files
 * Update this document
-* Add install Rule to wali
 
 Prerequsites:
 

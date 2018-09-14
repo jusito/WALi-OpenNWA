@@ -1,118 +1,8 @@
 [
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/Reach.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Reach.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Reach.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/StringSource.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/StringSource.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/StringSource.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/Common.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Common.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Common.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/SemElemPair.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/SemElemPair.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/SemElemPair.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/KeySpace.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeySpace.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeySpace.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/KeySetSource.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeySetSource.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeySetSource.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/TotalOrderWorklist.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/TotalOrderWorklist.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/TotalOrderWorklist.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/KeyOrderWorklist.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeyOrderWorklist.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeyOrderWorklist.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/RankedWorklist.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/RankedWorklist.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/RankedWorklist.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/ShortestPathWorklist.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/ShortestPathWorklist.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/ShortestPathWorklist.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
   "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/SemElem.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/SemElem.cpp\"",
   "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/SemElem.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/SemElemTensor.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/SemElemTensor.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/SemElemTensor.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/Exception.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Exception.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Exception.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/Printable.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Printable.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Printable.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/Key.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Key.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Key.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/IntSource.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/IntSource.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/IntSource.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/Markable.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Markable.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Markable.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/WeightFactory.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/WeightFactory.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/WeightFactory.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/KeyPairSource.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeyPairSource.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeyPairSource.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/IMergeFn.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/IMergeFn.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/IMergeFn.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/MergeFn.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/MergeFn.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/MergeFn.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/MergeFnFactory.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/MergeFnFactory.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/MergeFnFactory.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/ShortestPathSemiring.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/ShortestPathSemiring.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/ShortestPathSemiring.cpp"
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
@@ -121,208 +11,28 @@
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/domains/SemElemSet.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/domains/SemElemSet.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/domains/SemElemSet.cpp"
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/graph/InterGraph.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/InterGraph.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/InterGraph.cpp"
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/domains/RepresentativeString.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/domains/RepresentativeString.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/domains/RepresentativeString.cpp"
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/graph/Graph.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/Graph.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/Graph.cpp"
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/RuleFunctor.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/RuleFunctor.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/RuleFunctor.cpp"
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/graph/SummaryGraph.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/SummaryGraph.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/SummaryGraph.cpp"
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/Config.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Config.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Config.cpp"
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/graph/Functional.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/Functional.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/Functional.cpp"
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/ewpds/ERule.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/ERule.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/ERule.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/ewpds/ETrans.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/ETrans.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/ETrans.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/ewpds/EWPDS.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/EWPDS.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/EWPDS.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/Rule.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Rule.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Rule.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/fwpds/FWPDS.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/FWPDS.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/FWPDS.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/fwpds/SWPDS.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/SWPDS.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/SWPDS.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/fwpds/LazyTrans.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/LazyTrans.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/LazyTrans.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/Wrapper.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Wrapper.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Wrapper.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/DebugWPDS.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/DebugWPDS.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/DebugWPDS.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/WPDS.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/WPDS.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/WPDS.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/GenKeySource.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/GenKeySource.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/GenKeySource.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/State.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/State.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/State.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/WFA.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/WFA-eclose.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA-eclose.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA-eclose.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/WFA-path_summary.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA-path_summary.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA-path_summary.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/ITrans.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/ITrans.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/ITrans.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/Trans.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/Trans.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/Trans.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/WeightMaker.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WeightMaker.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WeightMaker.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/TransFunctor.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/TransFunctor.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/TransFunctor.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/TransSet.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/TransSet.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/TransSet.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/DeterminizeWeightGen.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/DeterminizeWeightGen.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/DeterminizeWeightGen.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/epr/EPA.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/EPA.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/EPA.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/epr/FunctionalWeight.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/FunctionalWeight.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/FunctionalWeight.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/epr/FunctionalWeightMaker.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/FunctionalWeightMaker.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/FunctionalWeightMaker.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessExtend.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessExtend.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessExtend.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessWrapper.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessWrapper.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessWrapper.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessRule.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessRule.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessRule.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/Visitor.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/Visitor.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/Visitor.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/CalculatingVisitor.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/CalculatingVisitor.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/CalculatingVisitor.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessMergeFn.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessMergeFn.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessMergeFn.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/VisitorDot.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/VisitorDot.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/VisitorDot.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessTrans.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessTrans.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessTrans.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/VisitorPrinter.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/VisitorPrinter.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/VisitorPrinter.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/Witness.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/Witness.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/Witness.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessCombine.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessCombine.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessCombine.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessMerge.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessMerge.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessMerge.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessLengthWorklist.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessLengthWorklist.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessLengthWorklist.cpp"
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/graph/IntraGraph.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/IntraGraph.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/IntraGraph.cpp"
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
@@ -336,18 +46,148 @@
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/regex/Concat.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Concat.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Concat.cpp"
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/IntSource.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/IntSource.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/IntSource.cpp"
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/regex/Regex.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Regex.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Regex.cpp"
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/KeyPairSource.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeyPairSource.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeyPairSource.cpp"
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/regex/Root.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Root.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Root.cpp"
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/fwpds/LazyTrans.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/LazyTrans.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/LazyTrans.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/fwpds/SWPDS.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/SWPDS.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/SWPDS.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/fwpds/FWPDS.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/FWPDS.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/fwpds/FWPDS.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/DebugWPDS.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/DebugWPDS.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/DebugWPDS.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/GenKeySource.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/GenKeySource.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/GenKeySource.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/Rule.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Rule.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Rule.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/ewpds/EWPDS.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/EWPDS.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/EWPDS.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/ewpds/ETrans.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/ETrans.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/ETrans.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/ewpds/ERule.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/ERule.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/ewpds/ERule.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/Config.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Config.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Config.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/RuleFunctor.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/RuleFunctor.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/RuleFunctor.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/Wrapper.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Wrapper.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/Wrapper.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wpds/WPDS.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/WPDS.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wpds/WPDS.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/SemElemTensor.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/SemElemTensor.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/SemElemTensor.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/Visitor.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/Visitor.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/Visitor.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/VisitorPrinter.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/VisitorPrinter.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/VisitorPrinter.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessMerge.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessMerge.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessMerge.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/Witness.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/Witness.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/Witness.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/VisitorDot.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/VisitorDot.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/VisitorDot.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessRule.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessRule.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessRule.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessMergeFn.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessMergeFn.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessMergeFn.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessWrapper.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessWrapper.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessWrapper.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/CalculatingVisitor.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/CalculatingVisitor.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/CalculatingVisitor.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessCombine.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessCombine.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessCombine.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessExtend.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessExtend.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessExtend.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessLengthWorklist.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessLengthWorklist.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessLengthWorklist.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/witness/WitnessTrans.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessTrans.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/witness/WitnessTrans.cpp"
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
@@ -356,13 +196,188 @@
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/regex/Concat.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Concat.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Concat.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
   "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/regex/Union.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Union.cpp\"",
   "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Union.cpp"
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/util/StringUtils.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/util/StringUtils.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/util/StringUtils.cpp"
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/regex/Root.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Root.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Root.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/regex/Regex.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Regex.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/regex/Regex.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/KeyOrderWorklist.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeyOrderWorklist.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeyOrderWorklist.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/domains/RepresentativeString.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/domains/RepresentativeString.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/domains/RepresentativeString.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/domains/SemElemSet.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/domains/SemElemSet.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/domains/SemElemSet.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/KeySetSource.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeySetSource.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeySetSource.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/MergeFn.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/MergeFn.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/MergeFn.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/Printable.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Printable.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Printable.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/RankedWorklist.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/RankedWorklist.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/RankedWorklist.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/Exception.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Exception.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Exception.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/Reach.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Reach.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Reach.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/Markable.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Markable.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Markable.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/WeightFactory.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/WeightFactory.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/WeightFactory.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/MergeFnFactory.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/MergeFnFactory.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/MergeFnFactory.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/Common.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Common.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Common.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/ShortestPathSemiring.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/ShortestPathSemiring.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/ShortestPathSemiring.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/ShortestPathWorklist.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/ShortestPathWorklist.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/ShortestPathWorklist.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/KeySpace.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeySpace.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/KeySpace.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/IMergeFn.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/IMergeFn.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/IMergeFn.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/TotalOrderWorklist.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/TotalOrderWorklist.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/TotalOrderWorklist.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/TransFunctor.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/TransFunctor.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/TransFunctor.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/epr/FunctionalWeightMaker.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/FunctionalWeightMaker.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/FunctionalWeightMaker.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/epr/EPA.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/EPA.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/EPA.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/epr/FunctionalWeight.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/FunctionalWeight.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/epr/FunctionalWeight.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/WFA.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/Trans.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/Trans.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/Trans.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/State.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/State.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/State.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/WFA-path_summary.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA-path_summary.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA-path_summary.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/WeightMaker.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WeightMaker.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WeightMaker.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/WFA-eclose.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA-eclose.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/WFA-eclose.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/ITrans.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/ITrans.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/ITrans.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/TransSet.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/TransSet.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/TransSet.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/wfa/DeterminizeWeightGen.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/DeterminizeWeightGen.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/wfa/DeterminizeWeightGen.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/SemElemPair.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/SemElemPair.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/SemElemPair.cpp"
+},
+{
+  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/Key.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Key.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/Key.cpp"
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
@@ -381,27 +396,12 @@
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/graph/Functional.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/Functional.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/Functional.cpp"
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/util/StringUtils.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/util/StringUtils.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/util/StringUtils.cpp"
 },
 {
   "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/graph/Graph.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/Graph.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/Graph.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/graph/IntraGraph.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/IntraGraph.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/IntraGraph.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/graph/InterGraph.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/InterGraph.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/InterGraph.cpp"
-},
-{
-  "directory": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/build/lib",
-  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/graph/SummaryGraph.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/SummaryGraph.cpp\"",
-  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/graph/SummaryGraph.cpp"
+  "command": "/usr/local/bin/clang++    -I\"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/include\"  -Wall -Wextra   -std=gnu++14 -o CMakeFiles/wali.dir/StringSource.cpp.o -c \"/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/StringSource.cpp\"",
+  "file": "/home/phasar/Git Repos/WALi-OpenNWA/Source/wali/lib/StringSource.cpp"
 }
 ]
