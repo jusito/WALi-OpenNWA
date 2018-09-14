@@ -34,7 +34,7 @@ namespace wali
   //
   KeySpace* getKeySpace()
   {
-    static std::auto_ptr<KeySpace> keySpace(createKeySpace());
+    static std::unique_ptr<KeySpace> keySpace(createKeySpace());
     return keySpace.get();
   }
 

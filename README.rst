@@ -5,7 +5,6 @@ TODO:
 -----
 
 * Clean up CMake Files
-* Fix compile warnings
 * Update this document
 * Add install Rule to wali
 

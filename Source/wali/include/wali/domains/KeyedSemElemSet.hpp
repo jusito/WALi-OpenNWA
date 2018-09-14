@@ -12,8 +12,10 @@
 
 #include <iostream>
 
+/*UNUSED
 namespace {
   std::string
+  
   clamp(std::string const & str)
   {
     const size_t maxlen = 50;
@@ -24,7 +26,8 @@ namespace {
       return str.substr(0, maxlen-3) + "...";
     }
   }
-}  
+}
+*/  
 
 namespace wali
 {
