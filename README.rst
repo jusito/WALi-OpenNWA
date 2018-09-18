@@ -1,22 +1,12 @@
-WALi and OpenNWA
-================
-
-TODO:
------
-
-* Update this document
+WALi (and OpenNWA)
+==================
+Prerequsites for OpenNWA not listed because compilation is broken.
 
 Prerequsites:
 
 * Boost  (old versions are OK; we actually variously use 1.33.1 and 1.42)
-* SCons
-* G++ or MSVC
-
-Optional prerequsites for the ``scons tests`` pseudotarget (or ``scons all``):
-
-* cmake
-* internet connection (will download Google Test automatically; no system-wide
-  installation is done)
+* Cmake
+* clang++
 
 Optional prerequsites for Doxygen documentation:
 
@@ -33,53 +23,17 @@ Optional prerequsites for Latex documentation:
 Building the Library
 --------------------
 
-To build, simply run ``scons``. By default, this will build the library (a
-shared library with GCC and a static library for MSVC) and OpenNWA
-executables. Other possible targets are:
+Building OpenNWA is currently broken, because it is not used by PhASAR.
 
-* ``addons``  
-  Build the contents of ``AddOns/``, such as the XML WPDS parser
+Building Wali:
+$ mkdir build/
+$ cd build/
+$ cmake ..
+$ make
 
-* ``examples``  
-  Build the contents of ``Examples/``
-
-* ``tests``  
-  Build the contents of ``Tests/``, including the NWA unit tests.  The NWA
-  unit tests build to ``Tests/harness/unit-tests/unit-tests`` (or
-  ``unit-tests.exe``) but are not automatically run. The tests must be run
-  from the ``Tests/harness/unit-tests`` directory, but a wrapper script
-  ``unit-tests.sh`` exists at the top level to change to that directory and
-  run them.
-            
-  CMake either needs to be picked up by SCons by default (and it does NOT
-  look at your ``$PATH``) or set the ``$CMAKE`` environment variable to point
-  to the executable.
-
-  The NWA tests are actually reasonably complete, relative to the Latex
-  documentation. TODO.txt mentions the omissions. Also mostly omitted are a
-  number of functions that did not make it into the Latex documentation.
-
-* ``all``  
-  Build everything! (**This target is currently broken.** Sorry.)
-
-You can pass ``arch=x86`` to SCons if you are on a 64-bit Linux machine to get
-a 32-bit build. (The 32 and 64 bit builds live next to each other, so they can
-coexist.) Note: because of the way ``cmake`` is called for the Google Test
-library, you probably won't be able to do this for the ``tests`` or ``all``
-pseudo-targets.
-
-You can also pass ``CXX=...`` to pick the particular compiler, e.g.  ``scons
-CXX=icc``. (If you are using compilers other than GCC or CL, you'll probably
-also have to pass ``strong_warnings=0`` to disable a bunch of -W flags that
-your compiler probably doesn't understand.)
-
-There is also a Visual Studio 2005 project, though the NWA unit tests aren't
-hooked up for this at all.
-
-
-WALi and OpenNWA are built to a single library, which will be copied into the
-lib/ or lib64/ directory. Addons will be built to other shared libraries in
-that directory.
+Installing Wali:
+1.Building Wali
+2.``make install``
 
 
 Building Documentation
