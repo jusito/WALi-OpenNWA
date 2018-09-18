@@ -26,30 +26,32 @@ Building the Library
 Building OpenNWA is currently broken, because it is not used by PhASAR.
 
 Building Wali:
+```
 $ mkdir build/
 $ cd build/
 $ cmake ..
 $ make
+```
 
 Installing Wali:
 1.Building Wali
-2.``make install``
+2.`make install`
 
 
 Building Documentation
 ----------------------
 
-To get Doxygen output, run ``doxygen Doxyfile`` from the top-level directory.
-By default, it will generate HTML output to ``Doc/doxygen/html`` and Latex
-output to ``Doc/doxygen/latex``. (Run ``make`` in the latter directory to
+To get Doxygen output, run `doxygen Doxyfile` from the top-level directory.
+By default, it will generate HTML output to `Doc/doxygen/html` and Latex
+output to `Doc/doxygen/latex`. (Run `make` in the latter directory to
 build the Latex to a PDF.)
 
-To build the NWA documentation, change to ``Doc/opennwa/`` and run
-``pdflatex`` on ``opennwa.tex``, passing
-``-shell-escape``. (``-shell-escape`` is required by the pygmentize package,
+To build the NWA documentation, change to `Doc/opennwa/` and run
+`pdflatex` on `opennwa.tex`, passing
+`-shell-escape`. (`-shell-escape` is required by the pygmentize package,
 used for source-highlighting the example code at the beginning.) If you would
 like to rebuild the figures (though this is not necessary if you do not
-change them), change to Doc/opennwa/Figures and run ``make``. Note that a
+change them), change to Doc/opennwa/Figures and run `make`. Note that a
 couple of the figures used in the official version of the NWA manual have
 been modified by hand, and regenerating them will cause those changes to be
 lost.
