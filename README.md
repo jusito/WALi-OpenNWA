@@ -15,8 +15,8 @@ Optional prerequsites for Doxygen documentation:
 Optional prerequsites for Latex documentation:
 
 * Latex  (we use TexLive 2010, but it has also built with MikTex)
-* `pygments <http://pygments.org/>`
-* `dot2tex <http://www.fauskes.net/code/dot2tex/>`  (optional even if you are
+* [pygments](http://pygments.org/)
+* [dot2tex] (http://www.fauskes.net/code/dot2tex/)  (optional even if you are
   building the documentation; we have 2.8.7)
 
 
@@ -34,8 +34,8 @@ $ make
 ```
 
 Installing Wali:
-1.Building Wali
-2.`make install`
+1. Building Wali
+2. `make install`
 
 
 Building Documentation
