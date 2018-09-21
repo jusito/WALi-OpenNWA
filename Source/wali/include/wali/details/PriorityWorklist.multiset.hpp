@@ -45,7 +45,7 @@ namespace wali
   } // namespace details
 } // namespace wali
 
-#include "wali/details/PriorityWorklist.multiset.cpp"
+#include "../../../lib/details/PriorityWorklist.multiset.cpp"
 
 // Yo, Emacs!
 // Local Variables:

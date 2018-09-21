@@ -91,7 +91,7 @@ namespace wali
   } // namespace details
 } // namespace wali
 
-#include "wali/details/PriorityWorklist.boost_heap.cpp"
+#include "../../../lib/details/PriorityWorklist.boost_heap.cpp"
 
 // Yo, Emacs!
 // Local Variables:
