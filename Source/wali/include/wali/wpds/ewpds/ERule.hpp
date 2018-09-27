@@ -9,6 +9,7 @@
 #include "wali/Common.hpp"
 #include "wali/MergeFn.hpp"
 #include "wali/wpds/Rule.hpp"
+#include <memory>
 
 namespace wali
 {
@@ -20,7 +21,7 @@ namespace wali
     {
 
       class ERule;
-      typedef ref_ptr<ERule> erule_t;
+      typedef std::shared_ptr<ERule> erule_t;
 
       /** @class ERule
        *

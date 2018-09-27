@@ -40,12 +40,12 @@ namespace wali
       // w2->print(std::cout << "w2 = ") << "\n";
       // ret->print(std::cout << "ret = ") << "\n";
 
-      return ret.get_ptr();
+      return ret.get();
     }
   }
 
   bool MergeFn::equal(merge_fn_t mf) {
-    MergeFn *amf = dynamic_cast<MergeFn *>(mf.get_ptr());
+    MergeFn *amf = dynamic_cast<MergeFn *>(mf.get());
     return (sr_data->equal(amf->sr_data));
   }
 

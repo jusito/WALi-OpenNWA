@@ -4,8 +4,8 @@
 
 
 #include "wali/SemElemTensor.hpp"
-#include "wali/ref_ptr.hpp"
 #include "wali/Countable.hpp"
+#include <memory>
 
 #include <vector>
 
@@ -16,7 +16,7 @@ namespace wali
     class IntraGraph;
 
     class SemElemFunctional;
-    typedef wali::ref_ptr<SemElemFunctional> functional_t;
+    typedef std::shared_ptr<SemElemFunctional> functional_t;
     /**
      * @class SemElemFunctional
      * @brief Build an expression from basic SemElemTensor operations and leaves to be computed later.

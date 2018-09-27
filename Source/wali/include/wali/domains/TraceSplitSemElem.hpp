@@ -7,6 +7,7 @@
 
 #include "wali/util/unordered_map.hpp"
 #include "wali/SemElem.hpp"
+#include <memory>
 
 namespace wali
 {
@@ -18,7 +19,7 @@ namespace wali
       , public wali::Printable
     {
     public:
-      typedef ref_ptr<Guard> Ptr;
+      typedef std::shared_ptr<Guard> Ptr;
 
       virtual size_t hash() const = 0;
       virtual bool equal(Ptr other) const = 0;
@@ -73,7 +74,7 @@ namespace wali
       }
 
       virtual bool equal(Ptr other) const {
-        LiteralGuard * that = dynamic_cast<LiteralGuard*>(other.get_ptr());
+        LiteralGuard * that = dynamic_cast<LiteralGuard*>(other.get());
         if (this->_special && that->_special) {
           // currently there is only one special value
           assert (*this->_special == *that->_special);

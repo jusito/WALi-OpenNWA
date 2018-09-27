@@ -7,16 +7,16 @@
  */
 
 #include "wali/Common.hpp"
-#include "wali/ref_ptr.hpp"
 #include "wali/SemElem.hpp"
 #include "wali/SemElemTensor.hpp"
 #include <iostream>
+#include <memory>
 
 
 namespace wali
 {
   class IMergeFn;
-  typedef ref_ptr< IMergeFn > merge_fn_t;
+  typedef std::shared_ptr< IMergeFn > merge_fn_t;
 
   /**
    * Class IMergeFn defines the interface

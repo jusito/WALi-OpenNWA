@@ -1,8 +1,8 @@
 #ifndef wali_PROGRESS_GUARD
 #define wali_PROGRESS_GUARD 1
 
-#include "wali/ref_ptr.hpp"
 #include "wali/Countable.hpp"
+#include <memory>
 
 /**
  * @author David Magagnosc
@@ -11,7 +11,7 @@
 namespace wali
 {
     class Progress;
-    typedef ref_ptr<Progress> progress_t;
+    typedef std::shared_ptr<Progress> progress_t;
 
     /*! @class Progress
      *

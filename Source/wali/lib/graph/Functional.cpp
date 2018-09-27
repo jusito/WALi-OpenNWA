@@ -100,28 +100,28 @@ sem_elem_tensor_t SemElemFunctional::evaluate(IntraGraph * const gr)
     case Constant:
       return value;
     case In:
-      return boost::polymorphic_downcast<SemElemTensor*>(gr->getWeight(intra_nodeno).get_ptr());
+      return boost::polymorphic_downcast<SemElemTensor*>(gr->getWeight(intra_nodeno).get());
     case Extend:
        lval = lhs->evaluate(gr);
        rval = rhs->evaluate(gr);
-      return boost::polymorphic_downcast<SemElemTensor*>(lval->extend(rval.get_ptr()).get_ptr());
+      return boost::polymorphic_downcast<SemElemTensor*>(lval->extend(rval.get()).get());
     case Combine:
        lval = lhs->evaluate(gr);
        rval = rhs->evaluate(gr);
-      return boost::polymorphic_downcast<SemElemTensor*>(lval->combine(rval.get_ptr()).get_ptr());
+      return boost::polymorphic_downcast<SemElemTensor*>(lval->combine(rval.get())).get());
     case Tensor:
        lval = lhs->evaluate(gr);
        rval = rhs->evaluate(gr);
-      return boost::polymorphic_downcast<SemElemTensor*>(lval->tensor(rval.get_ptr()).get_ptr());
+      return boost::polymorphic_downcast<SemElemTensor*>(lval->tensor(rval.get()).get());
     case Detensor:
        val = lhs->evaluate(gr);
-      return boost::polymorphic_downcast<SemElemTensor*>(val->detensor().get_ptr());
+      return boost::polymorphic_downcast<SemElemTensor*>(val->detensor().get());
     case DetensorTranspose:
        val = lhs->evaluate(gr);
-      return boost::polymorphic_downcast<SemElemTensor*>(val->detensorTranspose().get_ptr());
+      return boost::polymorphic_downcast<SemElemTensor*>(val->detensorTranspose().get());
     case Transpose:
        val = lhs->evaluate(gr);
-       return boost::polymorphic_downcast<SemElemTensor*>(val->transpose().get_ptr());
+       return boost::polymorphic_downcast<SemElemTensor*>(val->transpose().get());
     default:
       assert(false && "[SemElemFunctiona::evaluate] Unknown case\n");
   }

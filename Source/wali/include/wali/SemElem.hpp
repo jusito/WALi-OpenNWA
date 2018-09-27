@@ -6,13 +6,13 @@
  */
 
 #include "wali/Common.hpp"
-#include "wali/ref_ptr.hpp"
 #include "wali/Countable.hpp"
 #include "wali/Printable.hpp"
 #include <sstream>
 #include <cstdlib>
 #include <string>
 #include <typeinfo>
+#include <memory>
 
 namespace wali
 {
@@ -27,7 +27,7 @@ namespace wali
    * Handy typedef for working with reference counted
    * SemElem objects.
    */
-  typedef ref_ptr<SemElem> sem_elem_t;
+  typedef std::shared_ptr<SemElem> sem_elem_t;
 
   /** 
    * @class SemElem
@@ -170,7 +170,7 @@ namespace wali
        */
       sem_elem_t extend( sem_elem_t se ) 
       { 
-        return extend( se.get_ptr() ); 
+        return extend( se.get() ); 
       }
 
       /** 
@@ -179,7 +179,7 @@ namespace wali
        */
       sem_elem_t combine( sem_elem_t se ) 
       { 
-        return combine( se.get_ptr() ); 
+        return combine( se.get() ); 
       }
 
       /** 
@@ -188,12 +188,12 @@ namespace wali
        */
       bool equal( sem_elem_t se ) const 
       { 
-        return equal( se.get_ptr() ); 
+        return equal( se.get() ); 
       }
 
       bool underApproximates( sem_elem_t se )
       { 
-        return underApproximates( se.get_ptr() ); 
+        return underApproximates( se.get() ); 
       }
       
       /**
@@ -202,7 +202,7 @@ namespace wali
        */
       sem_elem_t diff( sem_elem_t se ) 
       { 
-        return diff( se.get_ptr() ); 
+        return diff( se.get() ); 
       }
 
       /** 
@@ -212,7 +212,7 @@ namespace wali
        */
       std::pair< sem_elem_t,sem_elem_t > delta( sem_elem_t se )
       {
-        return delta( se.get_ptr() );
+        return delta( se.get() );
       }
 
 
@@ -246,7 +246,7 @@ namespace wali
       bool
       containerLessThan(sem_elem_t se) const
       {
-        return this->containerLessThan(se.get_ptr());
+        return this->containerLessThan(se.get());
       }
 
       virtual

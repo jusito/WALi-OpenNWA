@@ -2,7 +2,6 @@
 #define wali_graph_INTER_GRAPH_GUARD 1
 
 #include "wali/Countable.hpp"
-#include "wali/ref_ptr.hpp"
 #include "wali/MergeFn.hpp"
 
 #include "wali/graph/GraphCommon.hpp"
@@ -13,6 +12,7 @@
 #include <iostream>
 #include <map>
 #include <set>
+#include <memory>
 
 namespace wali {
 
@@ -132,13 +132,13 @@ namespace wali {
          * are created.
          **/
         class SCCGraph;
-        typedef wali::ref_ptr<SCCGraph> scc_graph_t;
+        typedef std::shared_ptr <SCCGraph> scc_graph_t;
         typedef std::list< scc_graph_t > SCCGraphs;
         class SCCGraphLE {
           public:
             bool operator () (const scc_graph_t lhs, const scc_graph_t rhs) const
             {
-              return lhs.get_ptr() < rhs.get_ptr();
+              return lhs.get() < rhs.get();
             }
         };
         class SCCGraph : public Countable 
@@ -343,7 +343,7 @@ namespace wali {
             void resetSCCedges(IntraGraph *gr, unsigned int scc_number);
         };
 
-        typedef ref_ptr<InterGraph> InterGraphPtr;
+        typedef std::shared_ptr<InterGraph> InterGraphPtr;
     } // namespace graph
 
 } // namespace wali

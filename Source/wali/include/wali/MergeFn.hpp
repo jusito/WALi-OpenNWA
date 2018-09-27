@@ -7,7 +7,6 @@
  */
 
 #include "wali/Common.hpp"
-#include "wali/ref_ptr.hpp"
 #include "wali/IMergeFn.hpp"
 #include <iostream>
 
@@ -15,7 +14,6 @@
 namespace wali
 {
   class MergeFn;
-  //typedef ref_ptr< MergeFn > merge_fn_t;
 
   class MergeFn : public IMergeFn//public Printable, public Countable
   {

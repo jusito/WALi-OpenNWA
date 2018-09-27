@@ -10,6 +10,7 @@
 #include "wali/IMergeFn.hpp"
 #include "wali/wpds/WPDS.hpp"
 #include <set>
+#include <memory>
 
 namespace wali
 {
@@ -29,7 +30,7 @@ namespace wali
 
       using ::wali::wfa::WFA;
       class ERule;
-      typedef ref_ptr<ERule> erule_t;
+      typedef std::shared_ptr<ERule> erule_t;
 
 
       /**
@@ -55,7 +56,7 @@ namespace wali
         public:
 
           EWPDS(); 
-          EWPDS( ref_ptr<Wrapper> wrapper );
+          EWPDS( std::shared_ptr<Wrapper> wrapper );
           EWPDS( const EWPDS& e );
 
           virtual ~EWPDS();

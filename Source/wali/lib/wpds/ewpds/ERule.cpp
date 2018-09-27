@@ -10,6 +10,7 @@
 #include "wali/wpds/ewpds/ERule.hpp"
 #include <sstream>
 #include <list>
+#include <memory>
 
 namespace wali
 {
@@ -17,13 +18,13 @@ namespace wali
   {
     namespace ewpds
     {
-      typedef ref_ptr<SemElemPair> sem_elem_pair_t;
+      typedef std::shared_ptr<SemElemPair> sem_elem_pair_t;
 
       ERule::ERule( Config *f_, Config *t_, wali_key_t stk2_, sem_elem_t se_, merge_fn_t mf_ ) :
         Rule(f_,t_,stk2_,se_), mf(mf_)
       {
         if(stk2_ != WALI_EPSILON) {
-          if(mf_.get_ptr() == NULL) {
+          if(mf_.get() == NULL) {
             mf = new MergeFn(se_);
           }
           //extended_se = (SemElem *)(new SemElemPair(se->one(), se));
@@ -42,7 +43,7 @@ namespace wali
        */
       void ERule::copy(const rule_t r) {
 	Rule::copy(r);
-	const ERule *er = dynamic_cast<const ERule *>(r.get_ptr());
+	const ERule *er = dynamic_cast<const ERule *>(r.get());
 	mf = er->mf;
       }
 
@@ -62,7 +63,7 @@ namespace wali
       {
         Rule::print(o);
         o << "\t";
-        if(merge_fn().get_ptr() != NULL) merge_fn()->print(o);
+        if(merge_fn().get() != NULL) merge_fn()->print(o);
         return o;
       }
 
@@ -86,7 +87,7 @@ namespace wali
         }
         o << ">";
         se->marshallWeight(o);
-        if(merge_fn().get_ptr() != NULL) {
+        if(merge_fn().get() != NULL) {
           o << "\t<MergeFn>" << merge_fn()->toString() << "</MergeFn>\n";
         } 
         else {

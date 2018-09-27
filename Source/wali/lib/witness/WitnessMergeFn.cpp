@@ -34,8 +34,8 @@ namespace wali
 
     sem_elem_t WitnessMergeFn::priv_do_apply( sem_elem_t a,sem_elem_t b )
     {
-      Witness* left = dynamic_cast< Witness* >(a.get_ptr());
-      Witness* right = dynamic_cast< Witness* >(b.get_ptr());
+      Witness* left = dynamic_cast< Witness* >(a.get());
+      Witness* right = dynamic_cast< Witness* >(b.get());
       if( left == 0 ) {
         *waliErr << "[ERROR] Attempt to apply WitnessMergeFn to non witness.\n";
         assert(0);
@@ -52,7 +52,7 @@ namespace wali
     }
     
     bool WitnessMergeFn::equal(merge_fn_t mf) {
-      WitnessMergeFn *wmf = static_cast<WitnessMergeFn*>(mf.get_ptr());
+      WitnessMergeFn *wmf = static_cast<WitnessMergeFn*>(mf.get());
       return user_merge->equal(wmf->user_merge);
     }
 

@@ -13,7 +13,8 @@
  */
 #include <string>
 #include <set>
-#include "wali/ref_ptr.hpp"
+#include <memory>
+
 
 namespace wali
 {
@@ -28,7 +29,7 @@ namespace wali
    * Defined in KeySource.hpp
    */
   class KeySource;
-  typedef ref_ptr<KeySource> key_src_t;
+  typedef std::shared_ptr<KeySource> key_src_t;
 
   /**
    * Defined in KeySpace.hpp

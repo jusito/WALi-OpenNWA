@@ -6,6 +6,7 @@
  *
  */
 #include "wali/SemElem.hpp"
+#include <memory>
 
 namespace wali 
 {
@@ -20,7 +21,7 @@ namespace wali
    * Handy typedef for working with reference counted
    * SemElemTensor objects.
    */
-  typedef ref_ptr<SemElemTensor> sem_elem_tensor_t;
+  typedef std::shared_ptr<SemElemTensor> sem_elem_tensor_t;
 
 
 

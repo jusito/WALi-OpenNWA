@@ -49,12 +49,12 @@ namespace wali
       {
         public:
           EWPDS& e;
-          ref_ptr<Wrapper> wrapper;
-          ERuleCopier(EWPDS& ewpds,ref_ptr<Wrapper> wr) : e(ewpds),wrapper(wr) {}
+          std::shared_ptr<Wrapper> wrapper;
+          ERuleCopier(EWPDS& ewpds,std::shared_ptr<Wrapper> wr) : e(ewpds),wrapper(wr) {}
           virtual void operator()(const rule_t& r)
           {
             // TODO - can be made static_cast
-            const ERule* erule = dynamic_cast<const ERule*>(r.get_ptr());
+            const ERule* erule = dynamic_cast<const ERule*>(r.get());
             assert(erule != NULL);
             sem_elem_t se = erule->weight();
             merge_fn_t mf = erule->merge_fn();
@@ -78,7 +78,7 @@ namespace wali
       {
       }
 
-      EWPDS::EWPDS( ref_ptr<Wrapper> wr ) : WPDS(wr), addEtrans(false)
+      EWPDS::EWPDS( std::shared_ptr<Wrapper> wr ) : WPDS(wr), addEtrans(false)
       { 
       }
 
@@ -202,10 +202,10 @@ namespace wali
           if (!mf.is_valid()) 
           {
             // ERule = (..keys..), W, MFun
-            ERule* erule = dynamic_cast<ERule*>(r.get_ptr());
+            ERule* erule = dynamic_cast<ERule*>(r.get());
             assert(erule != NULL);
             merge_fn_t rule_mf = erule->merge_fn();
-            MergeFn* mfun = dynamic_cast<MergeFn*>(erule->merge_fn().get_ptr());
+            MergeFn* mfun = dynamic_cast<MergeFn*>(erule->merge_fn().get());
             // This is a default merge function. We can therefore combine
             // the weights on it.
             if (NULL != mfun)
@@ -235,7 +235,7 @@ namespace wali
           else {
 	    // Now lets ensure that the old merge function and the new one being
 	    // added here are the same. This is the only case we allow.
-            ERule* erule = dynamic_cast<ERule*>(r.get_ptr());
+            ERule* erule = dynamic_cast<ERule*>(r.get());
             assert(erule != NULL);
 	    if(!mf->equal(erule->merge_fn())) {
 	      *waliErr << "[ERROR] EWPDS :: Cannot add again the same push rule.\n";
@@ -249,7 +249,7 @@ namespace wali
 	// if the rule existed before, but replace_weight was set, in
 	// which case the old wrapped merge function got replaced
 	if ( (!rb  || (rb && replace_weight)) && wrapper.is_valid() && to_stack2 != WALI_EPSILON) {
-	  ERule* x = (ERule*)r.get_ptr();
+	  ERule* x = (ERule*)r.get();
 	  x->set_merge_fn( wrapper->wrap(*x,x->merge_fn()) );
 	}
 
@@ -275,8 +275,8 @@ namespace wali
           } 
           else 
           {
-            ERule* x = (ERule*)rhash_it->second.get_ptr();
-	    ERule *er = (ERule*)(r.get_ptr());
+            ERule* x = (ERule*)rhash_it->second.get();
+	    ERule *er = (ERule*)(r.get());
 	    if(!x->merge_fn()->equal(er->merge_fn())) {
 	      *waliErr << "[ERROR] EWPDS :: Cannot give two push rules with same r.h.s.\n";
 	      r->print( *waliErr << "    : " ) << std::endl;
@@ -324,7 +324,7 @@ namespace wali
 
         // Compute weight on the resulting transition
         if(et1 != 0) {
-          erule_t er = (ERule *)(r.get_ptr());
+          erule_t er = (ERule *)(r.get());
           w1 = er->merge_fn()->apply_f(t1->weight()->one(), t1->weight());
           wNew = w1->extend(delta);
         } else {
@@ -375,7 +375,7 @@ namespace wali
           }
 
         } else { 
-          erule_t er = (ERule *)(r.get_ptr());
+          erule_t er = (ERule *)(r.get());
 
           if(et == 0) {
             wrule_trans = r->weight()->extend( delta );
@@ -594,7 +594,7 @@ namespace wali
         // This code is copied in FWPDS::update_prime.
         // Changes here should be reflected there.
         //
-        ERule* er = (ERule*)r.get_ptr();
+        ERule* er = (ERule*)r.get();
         wfa::ITrans* tmp = 
           new ETrans(
               from, r->to_stack2(), call->to(),

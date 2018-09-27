@@ -3,9 +3,9 @@
 
 #include "wali/SemElem.hpp"
 #include "wali/MergeFn.hpp"
-#include "wali/ref_ptr.hpp"
 #include "wali/Key.hpp"
 #include <set>
+#include <memory>
 
 
 namespace wali {

@@ -5,6 +5,7 @@
 
 #include <set>
 #include "wali/util/unordered_set.hpp"
+#include <memory>
 
 #include <boost/function.hpp>
 //#include <boost/container/flat_set.hpp>
@@ -33,8 +34,8 @@ namespace wali
                                         SemElemRefPtrHash, SemElemRefPtrEqual
                                        > ElementSet;
       
-      typedef ref_ptr<SemElemSet> Ptr;
-      typedef ref_ptr<SemElemSet const> ConstPtr;
+      typedef std::shared_ptr<SemElemSet> Ptr;
+      typedef std::shared_ptr<SemElemSet const> ConstPtr;
 
       virtual
       std::ostream &
@@ -61,7 +62,7 @@ namespace wali
 
       virtual bool equal( SemElem * se ) const;
       bool equal( sem_elem_t se ) const {
-        return this->equal(se.get_ptr());
+        return this->equal(se.get());
       }
 
       virtual std::ostream& print( std::ostream & o ) const;

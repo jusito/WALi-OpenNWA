@@ -7,9 +7,9 @@
 #include <set>
 #include "wali/util/unordered_set.hpp"
 #include <map>
+#include <memory>
 
 #include "wali/SemElem.hpp"
-#include "wali/ref_ptr.hpp"
 #include "wali/HashMap.hpp"
 
 #include "wali/graph/GraphCommon.hpp"
@@ -56,12 +56,12 @@ namespace wali {
         enum reg_exp_type {Constant, Updatable, Extend, Combine, Star};
 
         class RegExp;
-        typedef ref_ptr<RegExp> reg_exp_t;
+        typedef std::shared_ptr<RegExp> reg_exp_t;
         typedef long unsigned int node_no_t;
 
         struct cmp_reg_exp {
             bool operator() (reg_exp_t r1, reg_exp_t r2) const {
-                return (r1.get_ptr() < r2.get_ptr());
+                return (r1.get() < r2.get());
             }
         };
 
@@ -80,33 +80,33 @@ namespace wali {
                 c2 = _c2;
             }
             bool operator() (reg_exp_key_t r1, reg_exp_key_t r2) const {
-                return (r1.type == r2.type && r1.c1.get_ptr() == r2.c1.get_ptr() &&
-                        r1.c2.get_ptr() == r2.c2.get_ptr());
+                return (r1.type == r2.type && r1.c1.get() == r2.c1.get() &&
+                        r1.c2.get() == r2.c2.get());
             }
         };
 
         struct hash_reg_exp_key {
             size_t operator() (const reg_exp_key_t &k) const {
-                return ((size_t)k.type ^ (size_t)k.c1.get_ptr() ^ (size_t)k.c2.get_ptr());
+                return ((size_t)k.type ^ (size_t)k.c1.get() ^ (size_t)k.c2.get());
             }
         };
 
         struct hash_sem_elem {
             size_t operator() (const sem_elem_t &se) const {
-                return (size_t)se.get_ptr();
+                return (size_t)se.get();
             }
         };
 
         struct sem_elem_equal {
             bool operator() (sem_elem_t s1, sem_elem_t s2) const {
-                return (s1.get_ptr() == s2.get_ptr());
+                return (s1.get() == s2.get());
                 //return (s1->equal(s2));
             }
         };
 
         struct sem_elem_less {
             bool operator() (sem_elem_t s1, sem_elem_t s2) const {
-                return (s1.get_ptr() < s2.get_ptr());
+                return (s1.get() < s2.get());
                 //return (s1->equal(s2));
             }
         };
@@ -226,13 +226,13 @@ namespace wali {
                     nevals = 0;
                     if(t == Extend || t == Combine) {
                         type = t;
-                        assert(r1.get_ptr() != 0 && r2.get_ptr() != 0);
+                        assert(r1.get() != 0 && r2.get() != 0);
                         value = r1->value->zero();
                         children.push_back(r1);
                         children.push_back(r2);
                     } else if(t == Star) {
                         type = Star;
-                        assert(r1.get_ptr() != 0);
+                        assert(r1.get() != 0);
                         value = r1->value->zero();
                         children.push_back(r1);
                     } else {

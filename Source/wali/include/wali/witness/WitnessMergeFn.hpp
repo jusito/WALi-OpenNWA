@@ -9,6 +9,7 @@
 #include "wali/SemElem.hpp"
 #include "wali/MergeFn.hpp"
 #include "wali/witness/Witness.hpp"
+#include <memory>
 
 namespace wali 
 {
@@ -16,7 +17,7 @@ namespace wali
   {
     class WitnessMergeFn;
 
-    typedef ref_ptr<WitnessMergeFn> witness_merge_fn_t;
+    typedef std::shared_ptr<WitnessMergeFn> witness_merge_fn_t;
 
     class WitnessMergeFn : public MergeFn 
     {

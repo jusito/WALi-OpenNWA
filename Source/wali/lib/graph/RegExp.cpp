@@ -411,7 +411,7 @@ namespace wali {
         }
 
         reg_exp_t RegExpDag::combine(reg_exp_t r1, reg_exp_t r2) {
-            if(r1.get_ptr() == r2.get_ptr()) 
+            if(r1.get() == r2.get()) 
                 return r1;
             if(r1->type == Constant && r1->value->equal(r1->value->zero())) {
                 return r2;
@@ -617,7 +617,7 @@ namespace wali {
             bool operator() (heap_t e1, heap_t e2) const {
                 return (e1.first < e2.first) ? true :
                     (e1.first > e2.first) ? false :
-                    (e1.second.get_ptr() < e2.second.get_ptr());
+                    (e1.second.get() < e2.second.get());
             }
         };
 
@@ -853,7 +853,7 @@ namespace wali {
         }
 
         reg_exp_t RegExpDag::compressCombine(reg_exp_t r1, reg_exp_t r2) {
-            if(r1.get_ptr() == r2.get_ptr()) {
+            if(r1.get() == r2.get()) {
                 return r1;
             }
 
@@ -1722,11 +1722,11 @@ namespace wali {
         gray.insert(this);
         list<reg_exp_t>::iterator ch = children.begin();
         for(; ch != children.end(); ch++) {
-            set<RegExp *>::iterator it = gray.find((*ch).get_ptr());
+            set<RegExp *>::iterator it = gray.find((*ch).get());
             if(it != gray.end()) { // cycle
                 return true;
             }
-            it = black.find((*ch).get_ptr());
+            it = black.find((*ch).get());
             if(it == black.end()) {
                 bool r = (*ch)->dfs(gray,black);
                 if(r) return true;

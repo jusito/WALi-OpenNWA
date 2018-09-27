@@ -30,7 +30,6 @@ namespace wali
     class CA;
     class State;
     //typedef State* state_t;
-    //typedef ref_ptr<State> state_t;
 
     /*!
      * @class State
