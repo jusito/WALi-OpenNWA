@@ -13,6 +13,7 @@
 
 #include <typeinfo>
 #include <map>
+#include <memory>
 
 namespace wali
 {
@@ -43,9 +44,9 @@ namespace wali
       return *this;
     }
 
-    Witness* witness_t::getWitness( sem_elem_t se )
+    std::shared_ptr<Witness> witness_t::getWitness( sem_elem_t se )
     {
-      Witness* witness = dynamic_cast< Witness* >(se.get_ptr());
+      std::shared_ptr<Witness> witness = dynamic_cast< std::shared_ptr<Witness>>(se.get());
       //se->print( std::cerr << "\n\t+++ " ) << std::endl;
       if( NULL == witness ) {
         *waliErr << "[WARNING] witness_t::getWitness - failed downcast.\n";
@@ -114,7 +115,7 @@ namespace wali
       if (zit == zero_cache.end()) {
         zit = zero_cache.insert(std::make_pair(user_zero, new Witness(user_zero, true))).first;
       }
-      assert(zit->second.get_ptr() != NULL);
+      assert(zit->second.get() != NULL);
       return zit->second;
 #else
       return new Witness(user_zero, true);

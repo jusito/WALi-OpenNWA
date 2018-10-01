@@ -39,13 +39,13 @@ namespace wali
     {
       // left child
       if( w->hasLeft() ) {
-        Witness* left = w->left().get_ptr();
+        Witness* left = w->left().get();
         printEdge(w,left);
       }
 
       // right child
       if( w->hasRight() ) {
-        Witness* right = w->right().get_ptr();
+        Witness* right = w->right().get();
         printEdge(w,right);
       }
 
@@ -61,7 +61,7 @@ namespace wali
       // each child
       for( ; it != itEND ; it++ )
       {
-        Witness* child = it->get_ptr();
+        Witness* child = it->get();
         printEdge(w,child);
       }
 
@@ -85,19 +85,19 @@ namespace wali
     bool VisitorDot::visitMerge( WitnessMerge * w ) {
       // Caller
       if (w->hasCaller()) {
-        Witness* caller = w->caller().get_ptr();
+        Witness* caller = w->caller().get();
         printEdge(w,caller);
       }
 
       // Rule
       if (w->hasRule()) {
-        Witness *rule = w->rule().get_ptr();
+        Witness *rule = w->rule().get();
         printEdge(w,rule);
       }
 
       // Callee
       if (w->hasCallee()) {
-        Witness* callee = w->callee().get_ptr();
+        Witness* callee = w->callee().get();
         printEdge(w,callee);
       }
 

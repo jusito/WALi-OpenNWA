@@ -10,7 +10,7 @@
 #include "wali/Countable.hpp"
 #include "wali/Markable.hpp"
 #include "wali/SemElem.hpp"
-#include "wali/ref_ptr.hpp"
+#include <memory>
 
 //
 // begin namespace wali
@@ -189,11 +189,11 @@ namespace wali
         rule_t( const rule_t & rhs ) : rc( rhs.rc ) {}
 
         Rule * operator->() {
-          return get_ptr();
+          return get();
         }
 
         Rule & operator*() {
-          return *get_ptr();
+          return *get();
         }
 
         rule_t & operator=( const rule_t &rhs ) {
@@ -206,23 +206,23 @@ namespace wali
           return *this;
         }
 
-        Rule * get_ptr() {
-          return (Rule *)rc.get_ptr();
+        Rule * get() {
+          return (Rule *)rc.get();
         }
 
         //
         // const methods
         //
         const Rule * operator->() const {
-          return get_ptr();
+          return get();
         }
 
         const Rule & operator*() const {
-          return *get_ptr();
+          return *get();
         }
 
-        const Rule * get_ptr() const {
-          return (const Rule *)rc.get_ptr();
+        const Rule * get() const {
+          return (const Rule *)rc.get();
         }
 
         bool is_empty() const {
@@ -239,7 +239,7 @@ namespace wali
 
       private:
 
-        ref_ptr< Rule > rc;
+        std::shared_ptr< Rule > rc;
     };
 
   } // end namespace wpds

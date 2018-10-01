@@ -7,7 +7,7 @@
 
 #include "wali/Common.hpp"
 #include "wali/Markable.hpp"
-#include "wali/ref_ptr.hpp"
+#include <memory>
 #include "wali/SemElem.hpp"
 #include "wali/witness/Visitable.hpp"
 
@@ -19,15 +19,15 @@ namespace wali
   {
     class Witness;
 
-    struct witness_t : public wali::ref_ptr< Witness > 
+    struct witness_t
     {
-      typedef wali::ref_ptr< Witness > Parent;
+      typedef std::shared_ptr< Witness > Parent;
       witness_t();
       witness_t( sem_elem_t );
       witness_t( Witness* );
       witness_t& operator=( sem_elem_t se );
       witness_t& operator=( Witness* alpha );
-      Witness* getWitness( sem_elem_t se );
+      std::shared_ptr<Witness> getWitness( sem_elem_t se );
     };
 
     /**
@@ -95,7 +95,7 @@ namespace wali
         virtual bool equal( SemElem * se ) const;
 
         virtual bool equal( sem_elem_t se ) const {
-            return equal(se.get_ptr());
+            return equal(se.get());
         }
 
         //! Print the Witness to the parameter o. 

@@ -6,7 +6,7 @@
  */
 
 #include "wali/Common.hpp"
-#include "wali/ref_ptr.hpp"
+#include <memory>
 
 #include "wali/witness/Visitor.hpp"
 

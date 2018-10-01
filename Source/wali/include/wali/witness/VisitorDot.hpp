@@ -6,7 +6,7 @@
  */
 
 #include "wali/Common.hpp"
-#include "wali/ref_ptr.hpp"
+#include <memory>
 #include "wali/witness/Witness.hpp"
 #include "wali/witness/Visitor.hpp"
 #include <iostream>
@@ -45,13 +45,13 @@ namespace wali
         void printNode( Witness * w, std::string color, std::string label );
 
         void printNodeName( witness_t& wit ) {
-          printNodeName( wit.get_ptr() );
+          printNodeName( wit.get() );
         }
         void printEdge( witness_t& h,witness_t& t ) {
-          printEdge(h.get_ptr(),t.get_ptr());
+          printEdge(h.get(),t.get());
         }
         void printNode( witness_t& w,std::string color ) {
-          printNode( w.get_ptr(),color );
+          printNode( w.get(),color );
         }
       protected:
         std::ostream& os;

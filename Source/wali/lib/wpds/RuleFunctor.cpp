@@ -176,7 +176,7 @@ namespace wali
     /////////////////////////////////////////////////////////////////
     // class RuleCopier
     /////////////////////////////////////////////////////////////////
-    RuleCopier::RuleCopier(WPDS& wpds,ref_ptr<Wrapper> wr) : w(wpds),wrapper(wr)
+    RuleCopier::RuleCopier(WPDS& wpds,std::shared_ptr<Wrapper> wr) : w(wpds),wrapper(wr)
     {
     }
 
