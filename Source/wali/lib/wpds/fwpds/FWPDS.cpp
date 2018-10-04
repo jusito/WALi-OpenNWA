@@ -53,7 +53,7 @@ FWPDS::FWPDS() : EWPDS(), interGr(NULL), checkingPhase(false), newton(false), to
 {
 }
 
-FWPDS::FWPDS(ref_ptr<wpds::Wrapper> wr) : EWPDS(wr) , interGr(NULL), checkingPhase(false), newton(false), topDown(true)
+FWPDS::FWPDS(std::shared_ptr<wpds::Wrapper> wr) : EWPDS(wr) , interGr(NULL), checkingPhase(false), newton(false), topDown(true)
 {
 }
 
@@ -184,7 +184,7 @@ void FWPDS::prestar( wfa::WFA const & input, wfa::WFA& output )
   // If theZero is invalid, then there
   // are no rules and not saturation to 
   // be done.
-  if (!theZero.is_valid()) {
+  if (!theZero) {
     worklist->clear();
     return;
   }
@@ -197,12 +197,12 @@ void FWPDS::prestar( wfa::WFA const & input, wfa::WFA& output )
   // merge functions, it can be treated as a WPDS.
   // However, there is no cost benefit in using WPDS
   // (it only saves on debugging effort)
-  interGr = new graph::InterGraph(theZero, true, true);
+  interGr = std::shared_ptr<InterGraph>(new graph::InterGraph(theZero, true, true));
   interGr->dag->topDownEval(topDown);
   interGrs.push_back(interGr);
 
   // Input transitions become source nodes in FWPDS
-  FWPDSSourceFunctor sources(*interGr.get_ptr(), false);
+  FWPDSSourceFunctor sources(*interGr.get(), false);
   output.for_each(sources);
 
   // Build the InterGraph using EWPDS saturation without weights
@@ -249,11 +249,11 @@ void FWPDS::prestar_handle_call(wfa::ITrans *t1,
   assert(!(et1 == 0 && et2 != 0));
 
   if(et1 != 0) {
-    ERule *er = (ERule *)(r.get_ptr());
+    ERule *er = (ERule *)(r.get());
     interGr->addEdge(Transition(*t2),
                      Transition(*t1),
                      Transition(r->from()->state(), r->from()->stack(),t2->to()),
-                     er->merge_fn().get_ptr() );
+                     er->merge_fn().get() );
   } else {
     interGr->addEdge(Transition(*t2),
                      Transition(*t1),
@@ -381,7 +381,7 @@ void FWPDS::poststarIGR( wfa::WFA const & input, wfa::WFA& output )
   // If theZero is invalid then no rules have
   // been added to the WPDS and no saturation
   // can be done.
-  if(!theZero.is_valid()) {
+  if(!theZero) {
     worklist->clear();
     return;
   }
@@ -393,12 +393,12 @@ void FWPDS::poststarIGR( wfa::WFA const & input, wfa::WFA& output )
   // underlying pds is a EWPDS. In the absence of
   // merge functions, it can be treated as a WPDS.
   // However, there is no cost benefit in using WPDS
-  interGr = new graph::InterGraph(theZero, true, false);
+  interGr =std::make_shared<InterGraph>(new graph::InterGraph(theZero, true, false));
   interGr->dag->topDownEval(topDown);
   interGrs.push_back(interGr);
 
   // Input transitions become source nodes in FWPDS
-  FWPDSSourceFunctor sources(*interGr.get_ptr(), true);
+  FWPDSSourceFunctor sources(*interGr.get(), true);
   output.for_each(sources);
 
   // Build the InterGraph using EWPDS saturation without weights
@@ -589,7 +589,7 @@ wfa::ITrans* FWPDS::update_prime(
   // This code is copied from EWPDS::update_prime.
   // Changes here should be reflected there.
   //
-  ERule* er = (ERule*)r.get_ptr();
+  ERule* er = (ERule*)r.get();
   wfa::ITrans* et = 
     new ETrans(
         from, r->to_stack2(), call->to(),
@@ -612,7 +612,7 @@ void FWPDS::operator()( wfa::ITrans const * orig ) {
 
   Config *c = make_config( orig->from(),orig->stack() );
   sem_elem_t se = 
-    (wrapper.is_valid()) ? wrapper->wrap(*orig) : orig->weight();
+    (wrapper) ? wrapper->wrap(*orig) : orig->weight();
 
   LazyTrans *t = new LazyTrans( orig->copy() );
 

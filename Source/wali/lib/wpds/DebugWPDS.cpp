@@ -6,6 +6,7 @@
 #include "wali/wfa/WFA.hpp"
 #include "wali/wfa/State.hpp"
 #include "wali/wfa/Trans.hpp"
+#include <memory>
 
 namespace wali
 {
@@ -23,7 +24,7 @@ namespace wali
     {
     }
 
-    DebugWPDS::DebugWPDS( ref_ptr<Wrapper> wr ) : WPDS( wr )
+    DebugWPDS::DebugWPDS( std::shared_ptr<Wrapper> wr ) : WPDS( wr )
     {
     }
 

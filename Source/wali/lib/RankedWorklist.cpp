@@ -63,7 +63,7 @@ namespace wali
 
   int RankedWorklist::rankOf(const wfa::ITrans* a ) const
   {
-    witness::Witness * p = dynamic_cast<witness::Witness*>(a->weight().get_ptr());
+    witness::Witness * p = dynamic_cast<witness::Witness*>(a->weight().get());
     if (p != NULL) {
       return doRankOf(p->weight());
     }

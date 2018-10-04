@@ -92,7 +92,7 @@ namespace wali {
         // TODO - change dynamic_cast to static_cast 
         //        When happy with impl.
         ETrans* e = dynamic_cast<ETrans*>(tp);
-        if( e != 0 && wAtCall.is_valid()) {
+        if( e != 0 && wAtCall) {
           // Need to update wAtCall
           wAtCall = wAtCall->combine(e->wAtCall);
         }

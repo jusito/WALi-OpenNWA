@@ -5,6 +5,7 @@
 #include <ostream>
 #include <boost/function.hpp>
 #include "wali/SemElem.hpp"
+#include <memory>
 
 namespace wali {
   namespace domains {
@@ -30,15 +31,15 @@ namespace wali {
       typedef RuleSemElem_ RuleSemElem;
       typedef TransSemElem_ WfaSemElem;
 
-      typedef boost::function<ref_ptr<WfaSemElem>(WfaSemElem *, RuleSemElem *)>
+      typedef boost::function<std::shared_ptr<WfaSemElem>(WfaSemElem *, RuleSemElem *)>
               ExtendFunction;
 
       BiDomain(ExtendFunction extend, sem_elem_t val)
         : _value(val)
       {
 #if !defined(NDEBUG)
-        RuleSemElem * rulep = dynamic_cast<RuleSemElem*>(val.get_ptr());
-        WfaSemElem * wfap = dynamic_cast<WfaSemElem*>(val.get_ptr());
+        RuleSemElem * rulep = dynamic_cast<RuleSemElem*>(val.get());
+        WfaSemElem * wfap = dynamic_cast<WfaSemElem*>(val.get());
         assert(rulep != NULL || wfap != NULL);
 #endif
       }
@@ -74,8 +75,8 @@ namespace wali {
       extend(SemElem * other) {
         BiDomain * that = dynamic_cast<BiDomain*>(other);
         assert(that);
-        RuleSemElem * rule = dynamic_cast<RuleSemElem*>(that->_value.get_ptr());
-        WfaSemElem * weight = dynamic_cast<WfaSemElem*>(this->_value.get_ptr());
+        RuleSemElem * rule = dynamic_cast<RuleSemElem*>(that->_value.get());
+        WfaSemElem * weight = dynamic_cast<WfaSemElem*>(this->_value.get());
         return _extend(weight, rule);
       }
 

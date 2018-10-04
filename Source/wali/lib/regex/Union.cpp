@@ -79,7 +79,7 @@ namespace wali
     {
       mark();
       std::string label("+");
-      if( value.is_valid() )
+      if( value )
         label += " . " + value->to_string();
       write_dot_state(o,label,"yellow");
       std::list< regex_t >::const_iterator it = children.begin();
@@ -94,15 +94,15 @@ namespace wali
 
     wali::sem_elem_t Union::solve_recurse()
     {
-      if( !marked() && !value.is_valid()) {
+      if( !marked() && !value) {
         mark();
         std::list< regex_t >::iterator it = children.begin();
         wali::sem_elem_t answer;
         for(; it != children.end(); it++ ) {
           regex_t child = *it;
           wali::sem_elem_t tmp = child->solve_recurse();
-          if( answer.is_valid() ) {
-            if( tmp.is_valid() ) {
+          if( answer ) {
+            if( tmp ) {
               answer = answer->combine(tmp);
             }
             else {

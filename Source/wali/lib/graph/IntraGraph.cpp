@@ -84,7 +84,7 @@ namespace wali {
         } else {
           //print_trans(nodes[i].trans, out, pop);
           out << i << " ";
-          if(nodes[i].regexp.get_ptr() != 0) {
+          if(nodes[i].regexp.get() != 0) {
             nodes[i].regexp->reevaluate()->print(out);
             //nodes[i].regexp->print(out);
           }
@@ -660,14 +660,14 @@ namespace wali {
 
         // updates may repeat the same node (with weight / uno)
         if(it.uno == -1) {
-          if(nodes[it.node].regexp.get_ptr() == NULL) {
+          if(nodes[it.node].regexp.get() == NULL) {
             nodes[it.node].regexp = dag->constant(it.wt);
           } else {
             int uno = nodes[it.node].regexp->updatableNumber();
             dag->update(uno, it.wt);
           }
         } else {
-          if(nodes[it.node].regexp.get_ptr() == NULL) {
+          if(nodes[it.node].regexp.get() == NULL) {
             nodes[it.node].regexp = dag->updatable(it.uno, se->zero());
           } else {
             dag->update(it.uno, nodes[it.node].regexp->get_weight());
@@ -678,7 +678,7 @@ namespace wali {
 
       // Initialize rest of regexps
       for(i=0;i<n;i++) {
-        if(nodes[i].regexp.get_ptr() == NULL) {
+        if(nodes[i].regexp.get() == NULL) {
           nodes[i].regexp = dag->constant(se->zero());
         }
       }
@@ -861,7 +861,7 @@ namespace wali {
 
     sem_elem_t IntraGraph::get_weight(int nno) {
 
-      if(nodes[nno].regexp.get_ptr() == NULL) {
+      if(nodes[nno].regexp.get() == NULL) {
         assert(0);
         //buildCutsetRegExp(topsort_list,cutset_list,nodes,edges); 
         vector<PathSequence> seq;
@@ -1575,7 +1575,7 @@ namespace wali {
       std::stringstream ss;
       for(int i = 0; i < nnodes; ++i){
         if(i != 0){
-        const long regexpaddr = (const long) nodes[i].regexp.get_ptr();
+        const long regexpaddr = (const long) nodes[i].regexp.get();
         ss << "node" << i << " [label=\"(" << key2str(nodes[i].trans.src) 
           << ", " << key2str(nodes[i].trans.stack) << ", " 
           << key2str(nodes[i].trans.tgt) << ")\\n" << regexpaddr
@@ -1669,7 +1669,7 @@ namespace wali {
             int updatable_no = edges[*ei].updatable_no;
             if(updateEdgesSet.find(updatable_no) == updateEdgesSet.end()){
               updateEdges.push_back(updatable_no);
-              sem_elem_t wt = edges[*ei].exp->evaluate(this).get_ptr();
+              sem_elem_t wt = edges[*ei].exp->evaluate(this).get();
               weights.push_back(wt);
               //update the edge anyway. This weight should not be used, except for debugging.
               edges[*ei].weight = weights.back();
@@ -1710,7 +1710,7 @@ namespace wali {
             nodes[0].weight->print(cout);
             cout << "\n";
             SemElemTensor * wt =
-              boost::polymorphic_downcast<SemElemTensor*>(nodes[0].weight.get_ptr());
+              boost::polymorphic_downcast<SemElemTensor*>(nodes[0].weight.get());
             (wt->detensorTranspose())->print(cout);
           }
           else
@@ -1724,7 +1724,7 @@ namespace wali {
               nodes[i].weight->print(cout);
               cout << "\n";
               sem_elem_tensor_t wt =
-                boost::polymorphic_downcast<SemElemTensor*>(nodes[i].weight.get_ptr());
+                boost::polymorphic_downcast<SemElemTensor*>(nodes[i].weight.get());
               wt = wt->detensorTranspose();
               wt->print(cout);
             }
@@ -1746,7 +1746,7 @@ namespace wali {
               edges[i].weight->print(cout);
               cout << "\n";
               sem_elem_tensor_t wt =
-                boost::polymorphic_downcast<SemElemTensor*>(edges[i].weight.get_ptr());
+                boost::polymorphic_downcast<SemElemTensor*>(edges[i].weight.get());
               wt = wt->detensorTranspose();
               wt->print(cout);
             }

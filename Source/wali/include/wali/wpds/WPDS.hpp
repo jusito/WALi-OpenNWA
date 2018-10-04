@@ -23,6 +23,7 @@
 // std c++
 #include <iostream>
 #include <set>
+#include <memory>
 
 namespace wali
 {
@@ -68,7 +69,7 @@ namespace wali
       public:
 
         WPDS();
-        WPDS( ref_ptr<Wrapper> wrapper );
+        WPDS( std::shared_ptr<Wrapper> wrapper );
         WPDS( const WPDS& w );
         virtual ~WPDS();
 
@@ -80,7 +81,7 @@ namespace wali
         /**
          * Set the worklist used for pre and poststar queries.
          */
-        void setWorklist( ref_ptr< Worklist<wfa::ITrans> > wl );
+        void setWorklist( std::shared_ptr< Worklist<wfa::ITrans> > wl );
 
 
         /** 
@@ -575,8 +576,8 @@ namespace wali
       private: // methods
 
       protected: // data members
-        ref_ptr<Wrapper> wrapper;
-        ref_ptr< Worklist<wfa::ITrans> > worklist;
+        std::shared_ptr<Wrapper> wrapper;
+        std::shared_ptr< Worklist<wfa::ITrans> > worklist;
         chash_t configs;
         std::set< Config * > rule_zeroes;
         r2hash_t r2hash;

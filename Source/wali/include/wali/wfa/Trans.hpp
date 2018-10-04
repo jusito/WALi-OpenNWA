@@ -14,6 +14,7 @@
 #include "wali/SemElem.hpp"
 #include "wali/KeyContainer.hpp"
 #include "wali/wfa/ITrans.hpp"
+#include <memory>
 
 
 // Disable
@@ -52,7 +53,6 @@ namespace wali
      * @see Worklist
      * @see WFA 
      * @see sem_elem_t
-     * @see ref_ptr
      */
 
     class Trans : public ITrans, public Markable
@@ -139,7 +139,7 @@ namespace wali
           return delta;
         }
 
-        ref_ptr<WorklistData> worklistData() const throw() {
+        std::shared_ptr<WorklistData> worklistData() const throw() {
           return worklist_data;
         }
 
@@ -211,7 +211,7 @@ namespace wali
         /*!
          * Sets the worklist data
          */
-        void setWorklistData( ref_ptr<WorklistData> wd ) {
+        void setWorklistData( std::shared_ptr<WorklistData> wd ) {
           worklist_data = wd;
         }
 
@@ -280,7 +280,7 @@ namespace wali
         Key toStateKey;
         mutable sem_elem_t se;
         sem_elem_t delta;
-        ref_ptr<WorklistData> worklist_data;
+        std::shared_ptr<WorklistData> worklist_data;
 
       protected:  // vars used in Process and not relevant to Trans
         status_t status;

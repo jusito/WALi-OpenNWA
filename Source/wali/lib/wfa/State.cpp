@@ -29,7 +29,7 @@ namespace wali
     State::State( Key k, sem_elem_t W ) :
       Countable(),key(k),accepting_weight(W->zero()),se(W),delta_se(W),quasi(W),tag(0)
     {
-      if (!W.is_valid()) {
+      if (!W) {
         *waliErr << "[WARNING] wfa::State created with a NULL weight\n";
       }
       // States are always created with a weight of Zero
@@ -61,7 +61,7 @@ namespace wali
     std::ostream & State::print( std::ostream & o ) const
     {
       o << "State[ name=\"" << key2str(name()) << "\" W=\"";
-      if (se.is_valid())
+      if (se)
         o << se->toString() << "\" ]";
       else
         o << "NULL\" ]";

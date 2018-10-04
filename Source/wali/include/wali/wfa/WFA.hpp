@@ -31,6 +31,7 @@
 #include <list>
 #include <set>
 #include <map>
+#include <memory>
 
 namespace wali
 {
@@ -54,7 +55,7 @@ namespace wali
 
   namespace regex {
     class Regex;
-    typedef wali::ref_ptr<Regex> regex_t;
+    typedef std::shared_ptr<Regex> regex_t;
   }
 
   namespace wfa

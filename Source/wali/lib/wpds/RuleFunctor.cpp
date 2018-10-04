@@ -183,7 +183,7 @@ namespace wali
     void RuleCopier::operator()( const rule_t & r)
     {
       sem_elem_t se = r->weight();
-      if (wrapper.is_valid())
+      if (wrapper)
         se = wrapper->unwrap(se);
       w.add_rule(
           r->from_state(), r->from_stack(),

@@ -202,7 +202,7 @@ namespace wali
         }
 
         rule_t & operator=( Rule * r ) {
-          rc = r;
+          rc = std::make_shared<wali::wpds::Rule>(r);
           return *this;
         }
 
@@ -226,11 +226,11 @@ namespace wali
         }
 
         bool is_empty() const {
-          return rc.is_empty();
+          return (rc==false);
         }
 
         bool is_valid() const {
-          return rc.is_valid();
+          return (rc==true);
         }
 
         bool operator == (const rule_t& rhs) const{

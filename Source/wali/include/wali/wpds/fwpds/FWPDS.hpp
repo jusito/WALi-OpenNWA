@@ -15,6 +15,7 @@
 
 #include "wali/graph/GraphCommon.hpp"
 #include "wali/graph/InterGraph.hpp"
+#include <memory>
 
 namespace wali {
 
@@ -48,7 +49,7 @@ namespace wali {
         public:
           FWPDS();
           FWPDS(bool newton);
-          FWPDS(ref_ptr<Wrapper> wrapper);
+          FWPDS(std::shared_ptr<Wrapper> wrapper);
           FWPDS( const FWPDS& f );
           ~FWPDS();
 

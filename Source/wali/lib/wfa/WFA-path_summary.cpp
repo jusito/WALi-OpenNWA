@@ -171,7 +171,7 @@ namespace wali
             }
           }
         }
-        if (progress.is_valid()) {
+        if (progress) {
             progress->tick();
         }
       }
@@ -203,7 +203,7 @@ namespace wali
 
         virtual void operator()(ITrans * t)
         {
-          SemElem * weight = t->weight().get_ptr();
+          SemElem * weight = t->weight().get();
           found_any |= (dynamic_cast<Witness*>(weight) != NULL);
         }
       };
@@ -334,7 +334,7 @@ namespace wali
 
       sem_elem_t one = wt->one();
       if (getQuery() == INORDER) {
-        one = new domains::ReversedSemElem(one);
+        one = std::make_shared<wali::SemElem> (new domains::ReversedSemElem(one));
       }
       
       for (std::set<Key>::const_iterator fit = getFinalStates().begin();
@@ -386,7 +386,7 @@ namespace wali
           weight = trans->weight();
         } else {
           if (getQuery() == INORDER) {
-            weight = new domains::ReversedSemElem(wt->zero());
+            weight = std::make_shared<wali::SemElem> (new domains::ReversedSemElem(wt->zero()));
           }
           else {
             weight = wt->zero();
@@ -394,7 +394,7 @@ namespace wali
         }
 
         if (getQuery() == INORDER) {
-          domains::ReversedSemElem * rw = dynamic_cast<domains::ReversedSemElem*>(weight.get_ptr());
+          domains::ReversedSemElem * rw = dynamic_cast<domains::ReversedSemElem*>(weight.get());
           assert(rw);
           weight = rw->backingSemElem();
         }

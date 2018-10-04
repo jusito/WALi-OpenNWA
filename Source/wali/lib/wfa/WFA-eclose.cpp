@@ -409,12 +409,12 @@ namespace wali
             // 'source'.
             key_src_t to_state_refptr = getKeySource(to_state);
             wpds::GenKeySource const * to_state_gen_source =
-              dynamic_cast<wpds::GenKeySource const *>(to_state_refptr.get_ptr());
+              dynamic_cast<wpds::GenKeySource const *>(to_state_refptr.get());
             assert(to_state_gen_source);
 
             key_src_t state_pair = getKeySource(to_state_gen_source->getKey());
             KeyPairSource const * to_state_pair =
-              dynamic_cast<KeyPairSource const *>(state_pair.get_ptr());
+              dynamic_cast<KeyPairSource const *>(state_pair.get());
             assert(to_state_pair);
 
             source = to_state_pair->second();
@@ -459,7 +459,7 @@ namespace wali
     {
       // Lift weights to the sets
       WFA lifted;
-      sem_elem_t lifted_zero = new SemElemSet(computer, include_zeroes, this->getSomeWeight()->zero());
+      sem_elem_t lifted_zero = std::make_shared<wali::SemElem> (new SemElemSet(computer, include_zeroes, this->getSomeWeight()->zero()));
       SemElemSetLifter lifter(&lifted, computer, include_zeroes);
       for (std::set<Key>::const_iterator q = Q.begin(); q != Q.end(); ++q) {
         lifted.addState(*q, lifted_zero);
@@ -486,7 +486,7 @@ namespace wali
       for (AccessibleStateMap::const_iterator state_weight_pair = set_weights.begin();
            state_weight_pair != set_weights.end(); ++state_weight_pair)
       {
-        SemElemSet * set_weight = dynamic_cast<SemElemSet *>(state_weight_pair->second.get_ptr());
+        SemElemSet * set_weight = dynamic_cast<SemElemSet *>(state_weight_pair->second.get());
         
         assert(result.find(state_weight_pair->first) == result.end());
         result[state_weight_pair->first] = set_weight->getElements();

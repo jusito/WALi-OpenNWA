@@ -7,6 +7,7 @@
 
 #include "wali/Markable.hpp"
 #include "wali/SemElem.hpp"
+#include <memory>
 
 namespace wali 
 {
@@ -14,7 +15,7 @@ namespace wali
   {
     class Regex;
 
-    typedef wali::ref_ptr<Regex> regex_t;
+    typedef std::shared_ptr<Regex> regex_t;
 
     class Regex :
       public wali::Markable,

@@ -120,10 +120,10 @@ namespace wali
       sem_elem_t
       extendAndDiff(sem_elem_t next, sem_elem_t subtrahend)
       {
-        ReversedSemElem * next_down = dynamic_cast<ReversedSemElem*>(next.get_ptr());
+        ReversedSemElem * next_down = dynamic_cast<ReversedSemElem*>(next.get());
         assert(next_down);
 
-        ReversedSemElem * next_sub = dynamic_cast<ReversedSemElem*>(subtrahend.get_ptr());
+        ReversedSemElem * next_sub = dynamic_cast<ReversedSemElem*>(subtrahend.get());
         assert(next_sub);
 
         return new ReversedSemElem(next_down->backing_elem_->extendAndDiff(this->backing_elem_,

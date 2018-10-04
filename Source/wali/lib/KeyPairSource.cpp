@@ -57,7 +57,7 @@ namespace wali
   Key KeyPairSource::get_first(Key k)
   {
     key_src_t ks = getKeySource(k);
-    KeyPairSource const * kps = dynamic_cast<KeyPairSource const *>(ks.get_ptr());
+    KeyPairSource const * kps = dynamic_cast<KeyPairSource const *>(ks.get());
     if (kps == NULL) {
         std::cerr << "Key not a key pair: " << k << " " << key2str(k) << "\n";
         fast_assert(false && "Key not a key pair");
@@ -69,7 +69,7 @@ namespace wali
   Key KeyPairSource::get_second(Key k)
   {
     key_src_t ks = getKeySource(k);
-    KeyPairSource const * kps = dynamic_cast<KeyPairSource const *>(ks.get_ptr());
+    KeyPairSource const * kps = dynamic_cast<KeyPairSource const *>(ks.get());
     fast_assert(kps != NULL);
     if (kps == NULL)
         return 0;

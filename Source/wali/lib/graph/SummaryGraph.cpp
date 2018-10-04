@@ -147,7 +147,7 @@ namespace wali {
       // look up cache first
       map<Key, sem_elem_t>::iterator it = popWeightMap.find(k);
       if(it != popWeightMap.end())
-        return it->second.get_ptr();
+        return std::make_shared<wali::SemElem>(it->second.get());
 
       assert(k != WALI_EPSILON);
 
@@ -168,7 +168,7 @@ namespace wali {
         }
       }
 
-      if(ret.get_ptr() == NULL) {
+      if(ret.get() == NULL) {
         ret = post_igr->sem->zero();
       }
 
@@ -557,14 +557,14 @@ namespace wali {
             Transition tr = gr->nodes[i].trans;
             tr.tgt = q;
             int nno = trans2nodeno(tr);
-            if(nodes[nno].regexp.is_valid()) { 
+            if(nodes[nno].regexp) { 
               assert(tr.stack == (int)WALI_EPSILON || multiple_proc(tr.stack));
               // Take combine
               nodes[nno].regexp = dag->combine(nodes[nno].regexp, gr->nodes[i].regexp);
             } else {
               nodes[nno].regexp = gr->nodes[i].regexp;
             }
-            assert(nodes[nno].weight.is_valid());
+            assert(nodes[nno].weight);
           }
         }
       }
@@ -597,7 +597,7 @@ namespace wali {
 
         Transition tr(init_state, WALI_EPSILON, q);
         int nno = trans2nodeno(tr);
-        assert(nodes[nno].weight.is_valid());
+        assert(nodes[nno].weight);
 
         sem_elem_t weight;
         if(state_used_once.find(q) == state_used_once.end()) {
@@ -630,7 +630,7 @@ namespace wali {
 
           Transition tr2(init_state, t->stack(), qprime);
           int nno2 = trans2nodeno(tr2);
-          assert(nodes[nno2].weight.is_valid());
+          assert(nodes[nno2].weight);
           assert(nodes[nno2].uno != -1);
 
           // Compute new weight (transition t decides if merge function
@@ -664,7 +664,7 @@ namespace wali {
 
       // First, add all the intra-reachable transitions
       for(i=0;i<(int)nodes.size();i++) {
-        if(nodes[i].regexp.is_valid()) {
+        if(nodes[i].regexp) {
           sem_elem_t wt = nodes[i].regexp->get_weight();
           addIntraTrans(nodes[i].trans, wt, ca_out);
         }
@@ -701,7 +701,7 @@ namespace wali {
     // All such transitions go to a (non-init) state of the input automaton.
     // They may have init of a mid-state as the source state.
     void SummaryGraph::addIntraTrans(Transition &tr, sem_elem_t wt, wfa::WFA &ca_out) {
-      if(!wt.is_valid() || wt->equal(wt->zero())) return;
+      if(!wt || wt->equal(wt->zero())) return;
 
       // check the source state to see if an ETrans needs to be added
       if((Key)tr.src == init_state) {
@@ -747,7 +747,7 @@ namespace wali {
     // Add transitions (init / mid-state, *, mid-state). These are the ones
     // with preprocessed weights.
     void SummaryGraph::addMiddleTrans(Transition &tr, sem_elem_t wt, wfa::WFA &ca_out) {
-      if(!wt.is_valid() || wt->equal(wt->zero())) return;
+      if(!wt || wt->equal(wt->zero())) return;
 
       Key src = changeStateGeneration(tr.src, ca_out.getGeneration());
       Key tgt = changeStateGeneration(tr.tgt, ca_out.getGeneration());
@@ -785,7 +785,7 @@ namespace wali {
 
     Key SummaryGraph::changeStateGeneration(Key st, int gen) {
       key_src_t ks = getKeySource(st);
-      GenKeySource* gks = dynamic_cast<GenKeySource*> (ks.get_ptr());
+      GenKeySource* gks = dynamic_cast<GenKeySource*> (ks.get());
       if(gks == 0) return st;
 
       return getKey( new GenKeySource(gen, gks->getKey()));

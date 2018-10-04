@@ -12,6 +12,7 @@
 #include "wali/SemElem.hpp"
 #include "wali/KeyContainer.hpp"
 #include "wali/wfa/ITrans.hpp"
+#include <memory>
 
 namespace wali
 {
@@ -228,17 +229,17 @@ namespace wali
         }
 
 
-        ref_ptr<WorklistData> worklistData() const throw() {
+        std::shared_ptr<WorklistData> worklistData() const throw() {
           return worklist_data;
         }
 
-        void setWorklistData(ref_ptr<WorklistData> wd) {
+        void setWorklistData(std::shared_ptr<WorklistData> wd) {
           worklist_data = wd;
         }
 
       protected:
         ITrans* delegate; //! < Decorator delegates all ITrans methods to the delegate
-        ref_ptr<WorklistData> worklist_data;
+        std::shared_ptr<WorklistData> worklist_data;
     };
 
   } // namespace wfa

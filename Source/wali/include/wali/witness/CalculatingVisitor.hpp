@@ -97,8 +97,8 @@ namespace wali
 
       // These functions do fancy-schmancy stuff
       virtual void postvisitExtend( WitnessExtend * w) {
-        AnswerType right = popCheck(w->right().get_ptr());
-        AnswerType left  = popCheck(w->left().get_ptr());
+        AnswerType right = popCheck(w->right().get());
+        AnswerType left  = popCheck(w->left().get());
         
         AnswerType ans = calculateExtend(w, left, right);
         push(w, ans);
@@ -113,7 +113,7 @@ namespace wali
         for (std::list<witness_t>::const_reverse_iterator child = children.rbegin();
              child != children.rend(); ++child)
         {
-          child_answers.push_front(popCheck(child->get_ptr()));
+          child_answers.push_front(popCheck(child->get()));
         }
 
         AnswerType ans = calculateCombine(w, child_answers);
@@ -123,9 +123,9 @@ namespace wali
       }
       
       virtual void postvisitMerge( WitnessMerge * w) {
-        AnswerType callee = popCheck(w->callee().get_ptr());
-        AnswerType rule   = popCheck(w->rule().get_ptr());
-        AnswerType caller = popCheck(w->caller().get_ptr());
+        AnswerType callee = popCheck(w->callee().get());
+        AnswerType rule   = popCheck(w->rule().get());
+        AnswerType caller = popCheck(w->caller().get());
         
         AnswerType ans = calculateMerge(w, caller, rule, callee);
         push(w, ans);

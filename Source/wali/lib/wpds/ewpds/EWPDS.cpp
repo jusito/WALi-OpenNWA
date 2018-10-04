@@ -58,7 +58,7 @@ namespace wali
             assert(erule != NULL);
             sem_elem_t se = erule->weight();
             merge_fn_t mf = erule->merge_fn();
-            if (wrapper.is_valid())
+            if (wrapper)
             {
               se = wrapper->unwrap(se);
               if (r->to_stack2() != WALI_EPSILON)
@@ -199,7 +199,7 @@ namespace wali
         // would normally do with weights.
         if (rb && !replace_weight && to_stack2 != WALI_EPSILON) 
         {
-          if (!mf.is_valid()) 
+          if (!mf) 
           {
             // ERule = (..keys..), W, MFun
             ERule* erule = dynamic_cast<ERule*>(r.get());
@@ -224,7 +224,7 @@ namespace wali
               // (Note that the combine has already taken place in the call
               //  to make_rule.)
               //
-              erule->set_merge_fn( new MergeFn(erule->weight()) );
+              erule->set_merge_fn( std::make_shared<wali::IMergeFn>(new MergeFn(erule->weight()) ));
             }
             else {
               *waliErr << "[ERROR] EWPDS :: Cannot add again the same push rule.\n";
@@ -248,7 +248,7 @@ namespace wali
 	// Need to wrap the merge function if the rule is new or
 	// if the rule existed before, but replace_weight was set, in
 	// which case the old wrapped merge function got replaced
-	if ( (!rb  || (rb && replace_weight)) && wrapper.is_valid() && to_stack2 != WALI_EPSILON) {
+	if ( (!rb  || (rb && replace_weight)) && wrapper && to_stack2 != WALI_EPSILON) {
 	  ERule* x = (ERule*)r.get();
 	  x->set_merge_fn( wrapper->wrap(*x,x->merge_fn()) );
 	}
@@ -285,7 +285,7 @@ namespace wali
           }
         }
         // Set up theZero weight
-        if (!theZero.is_valid() && r->weight().is_valid()) 
+        if (!theZero && r->weight()) 
         {
           theZero = r->weight()->zero();
         }
@@ -324,7 +324,7 @@ namespace wali
 
         // Compute weight on the resulting transition
         if(et1 != 0) {
-          erule_t er = (ERule *)(r.get());
+          erule_t er = std::make_shared<wali::wpds::ewpds::ERule>((ERule *)(r.get()));
           w1 = er->merge_fn()->apply_f(t1->weight()->one(), t1->weight());
           wNew = w1->extend(delta);
         } else {
@@ -375,7 +375,7 @@ namespace wali
           }
 
         } else { 
-          erule_t er = (ERule *)(r.get());
+          erule_t er = std::make_shared<wali::wpds::ewpds::ERule>((ERule *)(r.get()));
 
           if(et == 0) {
             wrule_trans = r->weight()->extend( delta );
@@ -529,7 +529,7 @@ namespace wali
 
         Config *c = make_config( orig->from(),orig->stack() );
         sem_elem_t se = 
-          (wrapper.is_valid()) ? wrapper->wrap(*orig) : orig->weight();
+          (wrapper) ? wrapper->wrap(*orig) : orig->weight();
 
         wfa::ITrans *t = orig->copy();
 

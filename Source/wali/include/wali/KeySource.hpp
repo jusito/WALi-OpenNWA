@@ -44,7 +44,7 @@ namespace wali
   {
     bool operator()( key_src_t lhs, key_src_t rhs ) const
     {
-      return lhs->equal(rhs.get_ptr());
+      return lhs->equal(rhs.get());
     }
   };
 

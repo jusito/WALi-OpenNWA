@@ -86,7 +86,7 @@ namespace wali {
         for(transit = tset.begin(); transit != tset.end(); transit++, trans_cnt++) {
           wfa::ITrans *t = (*transit);
           wfa::State *q = getState(t->to());
-          FunctionalWeight *fw = dynamic_cast<FunctionalWeight *> (t->weight().get_ptr());
+          FunctionalWeight *fw = dynamic_cast<FunctionalWeight *> (t->weight().get());
           
           if(fw == 0) {
             *waliErr << "Error: Non-FunctionalWeight present in EPA\n";
@@ -110,7 +110,7 @@ namespace wali {
         if(trans_cnt == 1) { 
           sem_elem_t res = lookupCache(init_succ->name(), init_succ_wt);
           
-          if(res.is_valid()) {
+          if(res) {
             nCacheHits++;              
             return res;
           }
@@ -130,7 +130,7 @@ namespace wali {
           for(it = q->begin() ; it != q->end(); it ++) {
             wfa::ITrans *t = *it;
             State* qprime = getState(t->to());
-            FunctionalWeight *fw = dynamic_cast<FunctionalWeight *> (t->weight().get_ptr());
+            FunctionalWeight *fw = dynamic_cast<FunctionalWeight *> (t->weight().get());
             
             assert(qprime != 0 && fw != 0);  
             
@@ -216,8 +216,8 @@ namespace wali {
       
       // Adds ((q,w),res) to the cache
       void EPA::addToCache(Key q, sem_elem_t w, sem_elem_t res) {
-        assert(w.is_valid());
-        assert(res.is_valid());
+        assert(w);
+        assert(res);
         
         errorProjCache[q].push_back(std::pair< sem_elem_t, sem_elem_t >(w,res));
       }

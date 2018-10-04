@@ -13,6 +13,7 @@
 #include "wali/IntSource.hpp"
 #include "wali/KeyPairSource.hpp"
 #include "wali/KeySetSource.hpp"
+#include <memory>
 
 namespace wali
 {
@@ -148,7 +149,7 @@ namespace wali
   std::ostream& KeySpace::printKey( std::ostream& o, Key key, bool abbreviate )
   {
     key_src_t ksrc = getKeySource(key);
-    if( ksrc.is_valid() ) {
+    if( ksrc ) {
       std::stringstream str;
       ksrc->print(str);
 
@@ -175,7 +176,7 @@ namespace wali
   std::string KeySpace::key2str( Key key )
   {
     key_src_t ksrc = getKeySource(key);
-    if( ksrc.is_valid() ) {
+    if( ksrc ) {
       return ksrc->toString();
     }
     else {

@@ -6,6 +6,7 @@
  */
 
 #include "wali/wpds/WPDS.hpp"
+#include <memory>
 
 namespace wali
 {
@@ -26,7 +27,7 @@ namespace wali
 
       public:
         DebugWPDS();
-        DebugWPDS( ref_ptr<Wrapper> wrapper );
+        DebugWPDS( std::shared_ptr<Wrapper> wrapper );
 
         virtual ~DebugWPDS();
 

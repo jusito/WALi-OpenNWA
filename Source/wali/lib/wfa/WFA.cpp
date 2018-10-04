@@ -584,7 +584,7 @@ namespace wali
                                               right.getState(target_pair.second)->weight()),
             accept_weight = wmaker.make_weight(left.getState(target_pair.first)->acceptWeight(),
                                              right.getState(target_pair.second)->acceptWeight());
-          if (state_weight.get_ptr() == NULL) {
+          if (state_weight.get() == NULL) {
             state_weight = zero;
           }
           dest.addState(target_key, state_weight);
@@ -1627,13 +1627,13 @@ namespace wali
     bool add_trans_to_accessible_states(WFA::AccessibleStateMap & accessible,
                                         Key dest, sem_elem_t weight)
     {
-      assert(weight.get_ptr());
+      assert(weight.get());
       
       if (accessible.find(dest) != accessible.end()) {
         sem_elem_t old = accessible[dest];
         weight = weight->combine(old);
 
-        if (weight->equal(old.get_ptr())) {
+        if (weight->equal(old.get())) {
           // No change
           return false;
         }
@@ -1699,7 +1699,7 @@ namespace wali
                 // We have
                 //   (start) - - - - - > (source) ---> (trans_it->->to()) - - - - - > (dest->first)
                 //         source_weight      trans_it->->weight()       dest->second
-                assert(dest->second.get_ptr());
+                assert(dest->second.get());
                 sem_elem_t weight = source_weight->extend((*trans_it)->weight()->extend(dest->second));
                 add_trans_to_accessible_states(after, dest->first, weight);
               }
@@ -1981,7 +1981,7 @@ namespace wali
 
         ITrans const * right_trans = *r_place;
 
-        if (!left_trans->weight()->equal(right_trans->weight().get_ptr())
+        if (!left_trans->weight()->equal(right_trans->weight().get())
             && check_weights)
         {
           return false;
@@ -2010,9 +2010,9 @@ namespace wali
         Key right_state = right_states[state_index];
 
         if ((!left.getState(left_state)->weight()->equal(
-               right.getState(right_state)->weight().get_ptr())
+               right.getState(right_state)->weight().get())
              || !left.getState(left_state)->acceptWeight()->equal(
-               right.getState(right_state)->acceptWeight().get_ptr()))
+               right.getState(right_state)->acceptWeight().get()))
             && check_weights)
         {
           return false;

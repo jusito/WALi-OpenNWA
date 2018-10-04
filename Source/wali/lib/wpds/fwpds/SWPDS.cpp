@@ -2,6 +2,7 @@
 #include "wali/wpds/ewpds/ETrans.hpp"
 #include "wali/wpds/fwpds/SWPDS.hpp"
 #include "wali/graph/GraphCommon.hpp"
+#include <memory>
 
 using namespace std;
 
@@ -27,7 +28,7 @@ namespace wali
       
       void CopyCallRules::operator()( rule_t & r )
       {
-        ref_ptr<ERule> er = dynamic_cast<ERule *> (r.get_ptr());
+        std::shared_ptr<ERule> er = std::make_shared<ERule>(dynamic_cast<ERule *> (r.get()));
         assert(er != 0);
         
         if(r->to_stack2() != WALI_EPSILON) {
@@ -45,7 +46,7 @@ namespace wali
       { 
       }
 
-      SWPDS::SWPDS(ref_ptr<Wrapper> wr) : 
+      SWPDS::SWPDS(std::shared_ptr<Wrapper> wr) : 
         FWPDS(wr), preprocessed(false), sgr(NULL) 
       { 
       }
@@ -81,7 +82,7 @@ namespace wali
 
       void SWPDS::preprocess() {
         assert(!preprocessed);
-        assert(theZero.is_valid());
+        assert(theZero);
 
         if(pds_states.size() != 1) {
           *waliErr << "Error: Currently SWPDS can only handle single-state PDSs\n";
@@ -121,7 +122,7 @@ namespace wali
         interGr->update_all_weights();
         
         // Create SummaryGraph from the InterGraph
-        sgr = new graph::SummaryGraph(interGr.get_ptr(), start_state, syms.entryPoints, postAgrow, (graph::InterGraph::PRINT_OP)printKey);
+        sgr = new graph::SummaryGraph(interGr.get(), start_state, syms.entryPoints, postAgrow, (graph::InterGraph::PRINT_OP)printKey);
         
         // Now do pre-processing for pre*
         
@@ -130,12 +131,12 @@ namespace wali
           sem_elem_t se = sgr->pushWeight(*it);
           Key entry = sgr->getEntry(*it);
           
-          if(entry == WALI_EPSILON || !se.is_valid() || se->equal(se->zero())) {
+          if(entry == WALI_EPSILON || !se || se->equal(se->zero())) {
             // unreachable code
             continue;
           }
           
-          pre_pds.add_rule(start_state, entry, start_state, *it, se.get_ptr());
+          pre_pds.add_rule(start_state, entry, start_state, *it, se.get());
         }
         
         // Add call rules

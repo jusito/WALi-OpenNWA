@@ -5,6 +5,7 @@
  */
 
 #include "wali/MergeFn.hpp"
+#include <cassert>
 
 namespace wali
 {
@@ -24,9 +25,9 @@ namespace wali
 
   sem_elem_t MergeFn::apply_f(sem_elem_t w1, sem_elem_t w2)
   {
-    assert(w1.is_valid() && w2.is_valid());
+    assert(w1 && w2);
 
-    if(sr_data.is_empty()) {
+    if(!sr_data) {
       return w1->extend(w2);
     }
     else {
@@ -40,7 +41,7 @@ namespace wali
       // w2->print(std::cout << "w2 = ") << "\n";
       // ret->print(std::cout << "ret = ") << "\n";
 
-      return ret.get();
+      return ret;
     }
   }
 
@@ -58,7 +59,7 @@ namespace wali
   std::ostream& MergeFn::print(std::ostream &o) const
   {
     o << "MergeFn[";
-    if(sr_data.is_empty()) {
+    if(!sr_data) {
       o <<"ONE";
     } else {
       sr_data->print(o);

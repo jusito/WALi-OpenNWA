@@ -23,7 +23,7 @@ namespace wali
 
   int ShortestPathWorklist::doRankOf( sem_elem_t a ) const
   {
-    ShortestPathSemiring * p = dynamic_cast<ShortestPathSemiring*>(a.get_ptr());
+    ShortestPathSemiring * p = dynamic_cast<ShortestPathSemiring*>(a.get());
     if (p == NULL) {
       std::cout << "Error: weight not a shortestpathsemiring. It is: ";
       if (a != NULL) {

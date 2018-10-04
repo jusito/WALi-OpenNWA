@@ -13,7 +13,7 @@ namespace wali
   class Countable
   {
     public:
-      ref_ptr<Countable>::count_t count;
+      std::shared_ptr<Countable>::count_t count;
 
     public:
       /**

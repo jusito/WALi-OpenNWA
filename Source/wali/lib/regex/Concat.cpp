@@ -47,7 +47,7 @@ namespace wali
     {
       mark();
       std::string label("^");
-      if( value.is_valid() )
+      if( value )
         label = label + " . " + value->to_string();
       write_dot_state(o,label,"red");
       write_dot_edge(o,left);
@@ -61,11 +61,11 @@ namespace wali
 
     wali::sem_elem_t Concat::solve_recurse()
     {
-      if( !marked() && !value.is_valid()) {
+      if( !marked() && !value) {
         mark();
         wali::sem_elem_t lse = left->solve_recurse();
         wali::sem_elem_t rse = right->solve_recurse();
-        if( lse.is_valid() && rse.is_valid() )
+        if( lse && rse )
           value = lse->extend(rse);
         else {
           *wali::waliErr << "[WARNING] Concat::solve - "

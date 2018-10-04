@@ -39,7 +39,7 @@ namespace wali
       }
       else {
         //std::cout << "Resifting trans @ " << t << std::endl;
-        HeapHandleData* d = dynamic_cast<HeapHandleData*>(t->worklistData().get_ptr());
+        HeapHandleData* d = dynamic_cast<HeapHandleData*>(t->worklistData().get());
         assert(d != NULL);
         // Boost heaps are max-heaps, so we call increase-key instead of decrease-key.
         // FIXME: but if I call .increase(), it crashes. Huh?

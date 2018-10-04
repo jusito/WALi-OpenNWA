@@ -21,6 +21,7 @@
 #include "wali/DefaultWorklist.hpp"
 #include <iostream>
 #include <cassert>
+#include <memory>
 
 //
 // TODO: 
@@ -47,7 +48,7 @@ namespace wali
     {
     }
 
-    WPDS::WPDS( ref_ptr<Wrapper> w ) :
+    WPDS::WPDS( std::shared_ptr<Wrapper> w ) :
       wrapper(w),
       worklist( new DefaultWorklist<wfa::ITrans>() ),
       currentOutputWFA(0)
@@ -105,7 +106,7 @@ namespace wali
     /**
      * Set the worklist used for pre and poststar queries.
      */
-    void WPDS::setWorklist( ref_ptr< Worklist<wfa::ITrans> > wl )
+    void WPDS::setWorklist( std::shared_ptr< Worklist<wfa::ITrans> > wl )
     {
       if (wl == 0) {
         *waliErr << "[ERROR] Cannot set the worklist to NULL.\n";
@@ -470,7 +471,7 @@ namespace wali
           Key gstate = gen_state( r->to_state(),r->to_stack1() );
           fa.addState( gstate, randwgt->zero() );
         }
-        if( fa.progress.is_valid() )
+        if( fa.progress )
             fa.progress->tick();
       }
     }
@@ -482,7 +483,7 @@ namespace wali
       while( get_from_worklist( t ) ) 
       {
         post( t , fa );
-        if( fa.progress.is_valid() )
+        if( fa.progress )
             fa.progress->tick();
       }
     }
@@ -791,7 +792,7 @@ namespace wali
         }
       }
       // Set up theZero weight
-      if (!theZero.is_valid() && r->weight().is_valid())
+      if (!theZero && r->weight())
         theZero = r->weight()->zero();
       return rb;
     }
@@ -843,7 +844,7 @@ namespace wali
         }
       }
       // Set up theZero weight
-      if (!theZero.is_valid() && r->weight().is_valid())
+      if (!theZero && r->weight())
         theZero = r->weight()->zero();
       return rb;
     }
@@ -1001,7 +1002,7 @@ namespace wali
         if( tmp->f == f && tmp->t == t && tmp->to_stack2() == stk2 )
         {
           exists = true;
-          if( wrapper.is_valid() ) {
+          if( wrapper ) {
             // New behavior
             // Wrap the duplicate rule's weight, then combine since
             // wrapping produces a new semiring.
@@ -1020,7 +1021,7 @@ namespace wali
         }
       }
       if( !exists ) {
-        if( wrapper.is_valid() ) {
+        if( wrapper ) {
           r->setWeight( wrapper->wrap(*r) );
         }
         f->insert(r);
@@ -1056,7 +1057,7 @@ namespace wali
         if( tmp->f == f && tmp->t == t && tmp->to_stack2() == stk2 )
         {
           exists = true;
-          if( wrapper.is_valid() ) {
+          if( wrapper ) {
             // New behavior
             // Wrap the duplicate rule's weight, then combine since
             // wrapping produces a new semiring.
@@ -1069,7 +1070,7 @@ namespace wali
         }
       }
       if( !exists ) {
-        if( wrapper.is_valid() ) {
+        if( wrapper ) {
           r->setWeight( wrapper->wrap(*r) );
         }
         f->insert(r);
@@ -1166,7 +1167,7 @@ namespace wali
       Config* c = make_config( orig->from(),orig->stack() );
       wfa::ITrans* t = orig->copy();
       t->setConfig(c);
-      if (wrapper.is_valid()) {
+      if (wrapper) {
         t->setWeight( wrapper->wrap(*orig) );
       }
 

@@ -17,12 +17,12 @@ namespace wali
   {
     sem_elem_t WitnessWrapper::wrap( wfa::ITrans const & t )
     {
-      return new WitnessTrans(t);
+      return std::shared_ptr<wali::SemElem>(new WitnessTrans(t));
     }
 
     sem_elem_t WitnessWrapper::wrap( wpds::Rule const & r )
     {
-      return new WitnessRule(r);
+      return std::shared_ptr<wali::SemElem>(new WitnessRule(r));
     }
 
     // NOTE
@@ -33,14 +33,14 @@ namespace wali
         merge_fn_t user_merge )
     {
       sem_elem_t se = r.weight();
-      WitnessRule* wr = dynamic_cast<WitnessRule*>(se.get_ptr());
+      WitnessRule* wr = dynamic_cast<WitnessRule*>(se.get());
       assert (wr != NULL);
-      return new WitnessMergeFn(wr, user_merge);
+      return std::shared_ptr<wali::IMergeFn>(new WitnessMergeFn(wr, user_merge));
     }
 
     sem_elem_t WitnessWrapper::unwrap( sem_elem_t se )
     {
-      Witness* wit = dynamic_cast< Witness* >(se.get_ptr());
+      Witness* wit = dynamic_cast< Witness* >(se.get());
       if( 0 != wit ) {
         return wit->weight();
       }
@@ -54,7 +54,7 @@ namespace wali
 
     merge_fn_t WitnessWrapper::unwrap( merge_fn_t mf )
     {
-      WitnessMergeFn* wmf = dynamic_cast< WitnessMergeFn* >(mf.get_ptr());
+      WitnessMergeFn* wmf = dynamic_cast< WitnessMergeFn* >(mf.get());
       if( 0 != wmf ) {
         return wmf->get_user_merge();
       }

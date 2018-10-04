@@ -17,10 +17,10 @@ namespace wali
     {
       bool operator()( const wfa::ITrans* a, const wfa::ITrans* b ) const
       {
-        Witness *wita = dynamic_cast<Witness*>(a->weight().get_ptr());
+        Witness *wita = dynamic_cast<Witness*>(a->weight().get());
         assert (wita && "Transition without witness used with WitnessLengthWorklist");
 
-        Witness *witb = dynamic_cast<Witness*>(b->weight().get_ptr());
+        Witness *witb = dynamic_cast<Witness*>(b->weight().get());
         assert (witb && "Transition without witness used with WitnessLengthWorklist");
 
         if (wita->getMinimumLength() > witb->getMinimumLength()) {

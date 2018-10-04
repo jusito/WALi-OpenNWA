@@ -2,6 +2,7 @@
 #define wali_wpds_fwpds_SWPDS_GUARD 1
 
 #include <map>
+#include <memory>
 #include "wali/Common.hpp"
 
 #include "wali/wpds/RuleFunctor.hpp"
@@ -60,7 +61,7 @@ namespace wali
 
       public:
         SWPDS();
-        SWPDS(ref_ptr<Wrapper> wrapper);
+        SWPDS(std::shared_ptr<Wrapper> wrapper);
         virtual ~SWPDS();
 
         virtual void prestar( wfa::WFA const & input, wfa::WFA &output);

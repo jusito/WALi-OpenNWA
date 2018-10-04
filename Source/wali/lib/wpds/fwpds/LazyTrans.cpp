@@ -79,7 +79,7 @@ namespace wali
       }
 
       void LazyTrans::compute_weight() const {
-        if(!getDelegate()->weight().is_valid()) {
+        if(!getDelegate()->weight()) {
           sem_elem_t val = intergr->get_weight(wali::graph::Transition(*this));
 
           if(is_etrans) {
@@ -112,7 +112,7 @@ namespace wali
       }
 
       void LazyTrans::setWeight(sem_elem_t w) {
-        if(is_etrans && intergr.is_valid()) {
+        if(is_etrans && intergr) {
           // Ensure that 
           // etrans information inside intergr is propagated
           sem_elem_t wt = intergr->get_call_weight(wali::graph::Transition(*this));

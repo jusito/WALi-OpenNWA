@@ -57,8 +57,8 @@ namespace wali
     wali::sem_elem_t Star::solve_recurse()
     {
       // Probably better to use
-      // if( !value.is_valid() )
-      if( !marked() && !value.is_valid()) {
+      // if( !value)
+      if( !marked() && !value) {
         mark();
         wali::sem_elem_t w1 = child->solve_recurse();
         value = w1->one();           // start at 1
