@@ -10,7 +10,7 @@ namespace wali
 {
   const std::string IMergeFn::XMLTag("MergeFn");
 
-  IMergeFn::IMergeFn() : Countable()
+  IMergeFn::IMergeFn()
   { 
   }
 

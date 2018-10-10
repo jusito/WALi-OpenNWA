@@ -14,7 +14,7 @@ namespace wali
 
   const std::string SemElem::XMLTag("Weight");
 
-  SemElem::SemElem() : Countable() {}
+  SemElem::SemElem() {}
 
   std::ostream& SemElem::marshallWeight( std::ostream& o ) const
   {

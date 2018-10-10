@@ -6,13 +6,14 @@
  */
 
 #include "wali/Common.hpp"
-#include "wali/Countable.hpp"
+//#include "wali/Countable.hpp"
 #include "wali/Printable.hpp"
 #include <sstream>
 #include <cstdlib>
 #include <string>
 #include <typeinfo>
 #include <memory>
+#include <cassert>
 
 namespace wali
 {
@@ -55,7 +56,7 @@ namespace wali
    *   o   x * 1 = x = 1 * x
    */
 
-  class SemElem : public Printable, public Countable
+  class SemElem : public Printable
   {
 
     public:

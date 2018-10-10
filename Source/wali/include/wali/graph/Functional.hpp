@@ -4,7 +4,6 @@
 
 
 #include "wali/SemElemTensor.hpp"
-#include "wali/Countable.hpp"
 #include <memory>
 
 #include <vector>
@@ -29,7 +28,7 @@ namespace wali
      *
      * SemElemFuncional::evaluate can be used to evaluate the expression.
      **/
-    class SemElemFunctional : public Countable 
+    class SemElemFunctional
     {
       private:
         /**

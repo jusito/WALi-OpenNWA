@@ -20,33 +20,35 @@ namespace wali
   namespace witness
   {
       // struct witness_t
-    witness_t::witness_t() : Parent()
+    witness_t::witness_t()
     {
     }
 
-    witness_t::witness_t( sem_elem_t se ) : Parent( getWitness(se) )
+    witness_t::witness_t( sem_elem_t se )
     {
+      ptr = getWitness(se);
     }
 
-    witness_t::witness_t( Witness* wit ) : Parent( wit )
+    witness_t::witness_t( Witness* wit )
     {
+      ptr = std::make_shared<Witness>(wit);
     }
 
     witness_t& witness_t::operator=( sem_elem_t se )
     {
-      Parent::operator=( getWitness(se) );
+      ptr = getWitness(se);
       return *this;
     }
 
     witness_t& witness_t::operator=( Witness* wit )
     {
-      Parent::operator=( wit );
+      ptr = std::make_shared<Witness>(wit);
       return *this;
     }
 
     std::shared_ptr<Witness> witness_t::getWitness( sem_elem_t se )
     {
-      std::shared_ptr<Witness> witness = dynamic_cast< std::shared_ptr<Witness>>(se.get());
+      std::shared_ptr<Witness> witness = std::make_shared<Witness>(dynamic_cast<Witness*>(se.get()));
       //se->print( std::cerr << "\n\t+++ " ) << std::endl;
       if( NULL == witness ) {
         *waliErr << "[WARNING] witness_t::getWitness - failed downcast.\n";
@@ -94,7 +96,7 @@ namespace wali
 
     sem_elem_t Witness::one() const
     {
-      return new Witness(user_se->one(), true);
+      return std::make_shared<Witness>(new Witness(user_se->one(), true));
     }
 
     sem_elem_t Witness::zero() const
@@ -118,7 +120,7 @@ namespace wali
       assert(zit->second.get() != NULL);
       return zit->second;
 #else
-      return new Witness(user_zero, true);
+      return std::make_shared<Witness>(new Witness(user_zero, true));
 #endif
     }
 
@@ -134,12 +136,12 @@ namespace wali
         assert( 0 );
       }
       if( isEmpty && isOne() ) {
-        return that;
+        return std::make_shared<Witness>(that);
       }
       else if( that->isEmpty && that->isOne() ) {
-        return this;
+        return std::make_shared<Witness>(this);
       }
-      return new WitnessExtend( user_se->extend(that->user_se), this, that );
+      return std::make_shared<Witness>(new WitnessExtend( user_se->extend(that->user_se), this, that ));
     }
 
     /*
@@ -156,26 +158,26 @@ namespace wali
       }
 
       if( isZero() ) {
-        return that;
+        return std::make_shared<Witness>(that);
       } else if( that->isZero() ) {
-        return this;
+        return std::make_shared<Witness>(this);
       }
       else {
 
         // Do this here as both branches perform the combine
         sem_elem_t combinedUserSe = user_se->combine(that->user_se);
         if( combinedUserSe->equal(that->user_se) ) {
-          return that;
+          return std::make_shared<Witness>(that);
         }
         else if( combinedUserSe->equal(this->user_se) ) {
-          return this;
+          return std::make_shared<Witness>(this);
         }
         else {
 
           WitnessCombine * newwc = new WitnessCombine( combinedUserSe );
           newwc->addChild(this);
           newwc->addChild(that);
-          return newwc;
+          return std::make_shared<Witness>(newwc);
         }
       }
     }

@@ -76,7 +76,7 @@ namespace wali
         /**
          *  WFA transitions store some information that the worklist can use.
          */
-        struct WorklistData : Countable {
+        struct WorklistData {
           virtual ~WorklistData() {}
         };
 

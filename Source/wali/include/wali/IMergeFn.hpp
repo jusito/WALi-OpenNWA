@@ -22,7 +22,7 @@ namespace wali
    * Class IMergeFn defines the interface
    * that all merge functions must satisfy.
    */
-  class IMergeFn : public Printable, public Countable
+  class IMergeFn : public Printable
   {
     public:
       static const std::string XMLTag;

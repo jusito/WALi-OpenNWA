@@ -21,13 +21,44 @@ namespace wali
 
     struct witness_t
     {
-      typedef std::shared_ptr< Witness > Parent;
       witness_t();
       witness_t( sem_elem_t );
       witness_t( Witness* );
       witness_t& operator=( sem_elem_t se );
       witness_t& operator=( Witness* alpha );
       std::shared_ptr<Witness> getWitness( sem_elem_t se );
+
+
+      bool operator==(const std::shared_ptr<Witness>& that) const {
+        return ptr == that;
+      }
+
+      bool operator!=(const std::shared_ptr<Witness>& that) const {
+        return ptr != that;
+      }
+
+      Witness * get() const {
+        return ptr.get();
+      }
+
+      Witness * operator->() const {
+        return ptr.get();
+      }
+
+      Witness& operator*()   const {
+        assert(0 != ptr);
+        return *ptr.get();
+      }
+
+      bool operator<(std::shared_ptr<Witness> const & that) const {
+        return ptr < that;
+      }
+
+      bool is_empty() const { return !is_empty(); }
+      bool is_valid() const { return ptr==true;}
+
+      private:
+      std::shared_ptr<Witness> ptr;
     };
 
     /**

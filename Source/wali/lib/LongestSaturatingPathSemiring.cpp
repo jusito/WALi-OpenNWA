@@ -28,13 +28,13 @@ namespace wali {
   sem_elem_t LongestSaturatingPathSemiring::one() const
   {
     //static sem_elem_t elem = new LongestSaturatingPathSemiring(0);
-    return new LongestSaturatingPathSemiring(0, this->biggest);
+    return std::shared_ptr<SemElem>(new LongestSaturatingPathSemiring(0, this->biggest));
   }
 
   sem_elem_t LongestSaturatingPathSemiring::zero() const
   {
     //static sem_elem_t z = new LongestSaturatingPathSemiring((unsigned int)(-1));
-    return new LongestSaturatingPathSemiring((unsigned int)(-1), this->biggest);
+    return std::shared_ptr<SemElem>(new LongestSaturatingPathSemiring((unsigned int)(-1), this->biggest));
   }
 
 
@@ -53,7 +53,7 @@ namespace wali {
     
     LongestSaturatingPathSemiring* that = static_cast< LongestSaturatingPathSemiring* >(rhs);
     assert(this->biggest == that->biggest);
-    return new LongestSaturatingPathSemiring(plus_saturate(v,that->v,biggest), biggest);
+    return std::shared_ptr<SemElem>(new LongestSaturatingPathSemiring(plus_saturate(v,that->v,biggest), biggest));
   }
 
   sem_elem_t LongestSaturatingPathSemiring::combine( SemElem* rhs )
@@ -62,7 +62,7 @@ namespace wali {
     
     LongestSaturatingPathSemiring* that = static_cast< LongestSaturatingPathSemiring* >(rhs);
     assert(this->biggest == that->biggest);    
-    return new LongestSaturatingPathSemiring(max(v,that->v), biggest);
+    return std::shared_ptr<SemElem>(new LongestSaturatingPathSemiring(max(v,that->v), biggest));
   }
 
 

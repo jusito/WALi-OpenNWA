@@ -141,9 +141,9 @@ namespace wali {
           if(edgeMap.size() == 0)
             return;
           Dependency dy = edgeMap.begin()->second;
-          sem_elem_tensor_t one = boost::polymorphic_downcast<SemElemTensor*>(dy.second->one().get());
+          sem_elem_tensor_t one = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>(dy.second->one().get()));
           for(EdgeMap::iterator it = edgeMap.begin(); it != edgeMap.end(); ++it)
-            edgeMap[it->first] = Dependency(it->second.first, tensorSetUpFP(one, boost::polymorphic_downcast<SemElemTensor*>(it->second.second.get())).get());
+            edgeMap[it->first] = Dependency(it->second.first, std::make_shared<SemElem> (tensorSetUpFP(one, std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>(it->second.second.get()))).get()));
         }
 
         bool ETransHandler::exists(int ret) {
@@ -766,7 +766,7 @@ namespace wali {
           }
 
           //Setup weights so that everything is tensored
-          sem_elem_tensor_t sem_old = boost::polymorphic_downcast<SemElemTensor*>(sem.get());
+          sem_elem_tensor_t sem_old = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>(sem.get()));
           sem = tensorSetUpFP(sem_old, sem_old);
 #if defined(PPP_DBG) && PPP_DBG >= 0
           long totCombines=0, totExtends=0, totStars=0;
@@ -778,9 +778,9 @@ namespace wali {
           // For each SCC, solve completely using Newton's method.
           {
             SCCGraphs::iterator gr_it = gr_sorted.begin();
-            sem_elem_tensor_t one = boost::polymorphic_downcast<SemElemTensor*>(sem_old->one().get());
-            sem_elem_tensor_t zerot = boost::polymorphic_downcast<SemElemTensor*>((sem->zero()).get()); //sem is tensored
-            sem_elem_tensor_t zero = boost::polymorphic_downcast<SemElemTensor*>((sem_old->zero()).get());
+            sem_elem_tensor_t one = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>(sem_old->one().get()));
+            sem_elem_tensor_t zerot = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>((sem->zero()).get())); //sem is tensored
+            sem_elem_tensor_t zero = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>((sem_old->zero()).get()));
             for(unsigned scc_n = 1; scc_n <= max_scc_required; scc_n++) {
               ////////////////We will now create the Newton IntraGraph which will store the
               ////////////////actual weights, and from which RegExp will be generated.
@@ -837,8 +837,8 @@ namespace wali {
                       //This is a source node. 
                       //Create an immutable edge with weight:
                       //Post*:  w -> (w,1^T)
-                      sem_elem_tensor_t wt = boost::polymorphic_downcast<SemElemTensor*>((nodes[i].weight).get());
-                      sem_elem_tensor_t one = boost::polymorphic_downcast<SemElemTensor*>((wt->one()).get());
+                      sem_elem_tensor_t wt = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>((nodes[i].weight).get()));
+                      sem_elem_tensor_t one = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>((wt->one()).get()));
                       wt = tensorSetUpFP(wt,one);
                       graph->setSource(nodes[i].intra_nodeno, wt);
                     }
@@ -852,8 +852,8 @@ namespace wali {
                     //This is an edge (src--w-->tgt)
                     //Add an immutable edge src--w'-->tgt)
                     // w' = (w,1^T)
-                    sem_elem_tensor_t wt = boost::polymorphic_downcast<SemElemTensor*>((iter->weight).get());
-                    sem_elem_tensor_t one = boost::polymorphic_downcast<SemElemTensor*>((wt->one()).get());
+                    sem_elem_tensor_t wt = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>((iter->weight).get()));
+                    sem_elem_tensor_t one = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>((wt->one()).get()));
                     wt = tensorSetUpFP(wt,one);
                     graph->addEdge(nodes[iter->src].intra_nodeno, nodes[iter->tgt].intra_nodeno, wt);
 #if 0
@@ -880,7 +880,7 @@ namespace wali {
                     //Obtain the weight on the call edge
                     assert(eHandler.exists(iter->src1));                    
                     sem_elem_tensor_t wtCallRule =
-                      boost::polymorphic_downcast<SemElemTensor*>(eHandler.get_dependency(iter->src1,trash).get());
+                      std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>(eHandler.get_dependency(iter->src1,trash).get()));
                     assert(trash != -1);
 
                     // src2 is the external source for a hyperedge
@@ -895,11 +895,11 @@ namespace wali {
                       // If it has base weights, then
                       // w' = (wtCallRule x wt(src2), 1^T)
                       sem_elem_t wtsrc2 = nodes[iter->src2].gr->getWeight(nodes[iter->src2].intra_nodeno);
-                      sem_elem_tensor_t wt = boost::polymorphic_downcast<SemElemTensor*>(wtsrc2.get());
+                      sem_elem_tensor_t wt = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>(wtsrc2.get()));
                       if(nodes[iter->src2].gr->hasTensoredWeights)
                         wt = wt->detensorTranspose();
-                      wt = boost::polymorphic_downcast<SemElemTensor*>(wtCallRule->extend(wt.get()).get());
-                      sem_elem_tensor_t one = boost::polymorphic_downcast<SemElemTensor*>((wt->one()).get());                                     
+                      wt = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>(wtCallRule->extend(wt.get()).get()));
+                      sem_elem_tensor_t one = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>((wt->one()).get()));                                     
                       graph->addEdge(nodes[iter->src1].intra_nodeno, nodes[iter->tgt].intra_nodeno,
                           tensorSetUpFP(wt,one));
 #if 0
@@ -927,7 +927,7 @@ namespace wali {
 
                       // Add mutable edge src1--f-->tgt with weight 0 (tensored) and
                       // f = (Constant(callWt) x DetTrans(wt(src2)), 1^T)
-                      sem_elem_tensor_t zerot = boost::polymorphic_downcast<SemElemTensor*>(sem->zero().get());
+                      sem_elem_tensor_t zerot = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>(sem->zero().get()));
                       functional_t f = 
                         SemElemFunctional::tensor(
                             SemElemFunctional::extend(
@@ -1012,7 +1012,7 @@ namespace wali {
                     // Obtain the weight on the call edge
                     assert(eHandler.exists(iter->src1));                    
                     sem_elem_tensor_t wtCallRule =
-                      boost::polymorphic_downcast<SemElemTensor*>(eHandler.get_dependency(iter->src1,trash).get());
+                      std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>(eHandler.get_dependency(iter->src1,trash).get()));
                     assert(trash != -1);
 
                     // src2 is the external source for a hyperedge. This can't be recursive, hence --
@@ -1025,10 +1025,10 @@ namespace wali {
                     // else
                     // w' = wtCallRule x wt(src2)
                     sem_elem_t wtsrc2 = nodes[iter->src2].gr->getWeight(nodes[iter->src2].intra_nodeno);
-                    sem_elem_tensor_t wt = boost::polymorphic_downcast<SemElemTensor*>(wtsrc2.get());
+                    sem_elem_tensor_t wt = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>(wtsrc2.get()));
                     if(nodes[iter->src2].gr->hasTensoredWeights)
                       wt = wt->detensorTranspose();
-                    wt = boost::polymorphic_downcast<SemElemTensor*>(wtCallRule->extend(wt.get()).get());
+                    wt = std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>(wtCallRule->extend(wt.get()).get()));
                     graph->addEdge(nodes[iter->src1].intra_nodeno, nodes[iter->tgt].intra_nodeno, wt);
                   }
                   gr_it++;
@@ -1492,10 +1492,10 @@ namespace wali {
         sem_elem_t wt;
         if(nc != -1) {
           wt = nodes[nc].gr->get_weight(nodes[nc].intra_nodeno);
-          sem_elem_tensor_t twt = dynamic_cast<SemElemTensor*>(wt.get());
+          sem_elem_tensor_t twt = std::make_shared<wali::SemElemTensor>(dynamic_cast<SemElemTensor*>(wt.get()));
           if(twt != NULL){
             if(isOutputAutomatonTensored && ! nodes[nc].gr->hasTensoredWeights)
-              wt = tensorSetUpFP(twt,boost::polymorphic_downcast<SemElemTensor*>(twt->one().get()));
+              wt = tensorSetUpFP(twt,std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>(twt->one().get())));
             if(! isOutputAutomatonTensored && nodes[nc].gr->hasTensoredWeights)
               wt = twt->detensorTranspose();
           }
@@ -1506,10 +1506,10 @@ namespace wali {
         return wt->extend(wtCallRule.get());
       }
       sem_elem_t wt = nodes[n].gr->get_weight(nodes[n].intra_nodeno);
-      sem_elem_tensor_t twt = dynamic_cast<SemElemTensor*>(wt.get());
+      sem_elem_tensor_t twt = std::make_shared<wali::SemElemTensor>(dynamic_cast<SemElemTensor*>(wt.get()));
       if(twt != NULL){
         if(isOutputAutomatonTensored && ! nodes[n].gr->hasTensoredWeights)
-          wt = tensorSetUpFP(twt,boost::polymorphic_downcast<SemElemTensor*>(twt->one().get()));
+          wt = tensorSetUpFP(twt,std::make_shared<wali::SemElemTensor>(boost::polymorphic_downcast<SemElemTensor*>(twt->one().get())));
         if(! isOutputAutomatonTensored && nodes[n].gr->hasTensoredWeights)
           wt = twt->detensorTranspose();
       }
@@ -1568,10 +1568,10 @@ namespace wali {
           Transition t2(nodes[i].trans.tgt,0,0);
           if(newtonGr)
             ca->addEdge(get_number(intra_node_map,state,ca), get_number(intra_node_map, nodes[i].trans.tgt,ca), 
-                correct(newtonGr->get_weight(nodes[i].intra_nodeno).get()));
+                std::make_shared<wali::SemElem>(correct(newtonGr->get_weight(nodes[i].intra_nodeno).get())));
           else
             ca->addEdge(get_number(intra_node_map,state,ca), get_number(intra_node_map, nodes[i].trans.tgt,ca), 
-                correct(nodes[i].gr->get_weight(nodes[i].intra_nodeno).get()));
+                std::make_shared<wali::SemElemTensor>(correct(nodes[i].gr->get_weight(nodes[i].intra_nodeno).get())));
           worklist.push_back(nodes[i].trans.tgt);
         }
       }
@@ -1592,9 +1592,9 @@ namespace wali {
           int t1 = get_number(intra_node_map,nodes[i].trans.src,ca);
           int t2 = get_number(intra_node_map,nodes[i].trans.tgt,ca);
           if(newtonGr)
-            ca->addEdge(t1, t2, correct(newtonGr->get_weight(nodes[i].intra_nodeno).get()));
+            ca->addEdge(t1, t2, std::make_shared<wali::SemElemTensor>(correct(newtonGr->get_weight(nodes[i].intra_nodeno).get())));
           else
-            ca->addEdge(t1, t2, correct(nodes[i].gr->get_weight(nodes[i].intra_nodeno).get()));
+            ca->addEdge(t1, t2, std::make_shared<wali::SemElemTensor>(correct(nodes[i].gr->get_weight(nodes[i].intra_nodeno).get())));
           if(states_visited.find(nodes[i].trans.tgt) == states_visited.end()) {
             worklist.push_back(nodes[i].trans.tgt);
           }

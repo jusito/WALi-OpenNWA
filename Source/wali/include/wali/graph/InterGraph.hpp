@@ -1,7 +1,6 @@
 #ifndef wali_graph_INTER_GRAPH_GUARD
 #define wali_graph_INTER_GRAPH_GUARD 1
 
-#include "wali/Countable.hpp"
 #include "wali/MergeFn.hpp"
 
 #include "wali/graph/GraphCommon.hpp"
@@ -141,7 +140,7 @@ namespace wali {
               return lhs.get() < rhs.get();
             }
         };
-        class SCCGraph : public Countable 
+        class SCCGraph
         {
           // Graph data
           public:
@@ -180,7 +179,7 @@ namespace wali {
 
 
         class RegExpDag;
-        class InterGraph : public Countable {
+        class InterGraph{
           public:
             typedef std::ostream & (*PRINT_OP)(std::ostream &, int);
 
