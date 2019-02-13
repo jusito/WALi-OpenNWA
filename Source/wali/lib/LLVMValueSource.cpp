@@ -7,6 +7,7 @@
 #include "wali/Common.hpp"
 #include "wali/LLVMValueSource.hpp"
 #include "wali/hm_hash.hpp"
+#include <llvm/Support/raw_ostream.h>
 
 namespace wali
 {
@@ -30,7 +31,11 @@ namespace wali
 
   std::ostream& LLVMValueSource::print( std::ostream& o ) const
   {
-    return o << "lvstest";
+    std::string irbuffer;
+    llvm::raw_string_ostream rso(irbuffer);
+    value->print(rso);
+    rso.flush();
+    return o << irbuffer;
   }
 
   const llvm::Value *LLVMValueSource::getLLVMValue() const
