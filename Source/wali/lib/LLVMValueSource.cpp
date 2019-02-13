@@ -30,7 +30,7 @@ namespace wali
 
   std::ostream& LLVMValueSource::print( std::ostream& o ) const
   {
-    return o << value;
+    return o << "lvstest";
   }
 
   const llvm::Value *LLVMValueSource::getLLVMValue() const
