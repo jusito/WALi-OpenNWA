@@ -13,6 +13,9 @@
  */
 #include <string>
 #include <set>
+
+#include <llvm/IR/Value.h>
+
 #include "wali/ref_ptr.hpp"
 
 namespace wali
@@ -51,6 +54,7 @@ namespace wali
   Key getKey( const std::string& s );
   Key getKey( const char* s );
   Key getKey( int i );
+  Key getKey( const llvm::Value *v );
   Key getKey( Key k1, Key k2 );
   // @author Amanda Burton
   Key getKey( std::set<Key> ks );

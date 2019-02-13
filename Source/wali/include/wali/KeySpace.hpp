@@ -54,6 +54,12 @@ namespace wali
     wali::Key getKey( int i );
 
     /**
+     * Wrapper method for createing a llvm::Value*-Source and
+     * inserting it into the KeySpace
+     */
+    wali::Key getKey( const llvm::Value *v );
+
+    /**
      * Wrapper method for createing a KeyPairSource and
      * inserting it into the KeySpace
      */
