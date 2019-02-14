@@ -35,6 +35,14 @@ namespace wali
     llvm::raw_string_ostream rso(irbuffer);
     value->print(rso);
     rso.flush();
+    irbuffer = irbuffer.substr(0,
+      (irbuffer.find(", align") != std::string::npos) ?
+         irbuffer.find(", align") :
+         irbuffer.size());
+    irbuffer = irbuffer.substr(0,
+      (irbuffer.find("!phasar.") != std::string::npos) ?
+         irbuffer.find("!phasar.") :
+         irbuffer.size());
     return o << irbuffer;
   }
 
