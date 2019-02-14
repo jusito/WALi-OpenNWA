@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include "../VarSet.hpp"
 #include "../GenKillTransformer_T.hpp"
 #include "wali/Common.hpp"
@@ -135,6 +136,8 @@ int main()
 
     /* debug print wpds */
     pds.print( std::cout ) << "\n----------------------------------------\n";
+    std::ofstream ofs("pds.dot");
+    pds.print_dot(ofs, true);
     /* pre* o post* of <q, e_main> */
     printf("pre* o post* of <q, e_main>\n\n");
     wali::wfa::WFA ca1;
