@@ -16,7 +16,6 @@ ENDFOREACH(item)
 
 
 add_library(wali # Name der Bibliothek
-		STATIC # Art des Linkens (statisch oder dynamisch)
 		${WALI_SRC} # Quellcode der zur dieser Bibliothek gehören soll
 )
 
@@ -33,4 +32,4 @@ set_target_properties(wali
 	PREFIX "lib" # Der typische 'lib' Prefix einer Bibliothek auf Unix-Systemen
 )
 
-install(TARGETS wali ARCHIVE DESTINATION lib)
+install(TARGETS wali ARCHIVE DESTINATION lib LIBRARY DESTINATION lib)
