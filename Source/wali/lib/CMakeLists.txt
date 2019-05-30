@@ -19,6 +19,10 @@ add_library(wali # Name der Bibliothek
 		${WALI_SRC} # Quellcode der zur dieser Bibliothek gehören soll
 )
 
+target_link_libraries(wali
+  ${llvm_libs}
+)
+
 # Falls nötig und die Bibliothek selbst Abhangigkeiten besitzt,
 # kann man dieser hiermit dazu linken. Man sollte allerdings
 # soweit es geht darauf verzichten, da man ansonsten schnell in
