@@ -27,7 +27,8 @@ namespace wali
     if (p == NULL) {
       std::cout << "Error: weight not a shortestpathsemiring. It is: ";
       if (a != NULL) {
-        std::cout << typeid(*a).name() << "\n";
+        auto& r = *a.get_ptr();
+        std::cout << typeid(r).name() << "\n";
       }
       else {
         std::cout << "null\n";
