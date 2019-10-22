@@ -26,7 +26,7 @@ if(DEFINED LLVM_MAIN_SRC_DIR)
   )
 else()
   # Find an include llvm if we build out of tree
-  find_package(LLVM REQUIRED CONFIG 8)
+  find_package(LLVM REQUIRED CONFIG)
   find_library(LLVM_LIBRARY NAMES llvm REQUIRED)
   include_directories(${LLVM_INCLUDE_DIRS})
   link_directories(${LLVM_LIB_PATH} ${LLVM_LIBRARY_DIRS})
