@@ -14,9 +14,11 @@
 #include <string>
 #include <set>
 
-#include <llvm/IR/Value.h>
-
 #include "wali/ref_ptr.hpp"
+
+namespace llvm {
+  class Value;
+} // namespace llvm
 
 namespace wali
 {
@@ -86,4 +88,3 @@ namespace wali
 } // namespace wali
 
 #endif  // wali_KEY_GUARD
-

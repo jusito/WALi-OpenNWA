@@ -10,6 +10,10 @@
 #include "wali/KeySource.hpp"   //! defines hm_hash<wali::KeySource*>
 #include <vector>
 
+namespace llvm {
+  class Value;
+} // namespace llvm
+
 namespace wali
 {
   /**
@@ -19,9 +23,9 @@ namespace wali
   {
   public:
     KeySpace();
-    
+
     ~KeySpace();
-    
+
     /**
      * get_key returns the unique wali::Key associated with the
      * key_src_t ks. If no such key exists, a new wali::Key will be
@@ -34,7 +38,7 @@ namespace wali
      * @return wali::Key associated with parameter KeySource
      */
     wali::Key getKey( key_src_t ks );
-    
+
     /**
      * Wrapper method for createing a StringSource and
      * inserting it into the KeySpace
@@ -90,7 +94,7 @@ namespace wali
     size_t size();
 
     // @author Amanda Burton
-    /** 
+    /**
      * Wrapper method for creating a KeySetSource and
      * inserting it into the KeySpace
      */
@@ -109,7 +113,7 @@ namespace wali
 
     /**
      * Return std::string rep of KeySource. Looks up the key and calls
-     * KeySource::to_string(). 
+     * KeySource::to_string().
      *
      * @see KeySource
      */
@@ -119,7 +123,7 @@ namespace wali
     typedef wali::HashMap< key_src_t, wali::Key > ks_hash_map_t;
     typedef std::vector< key_src_t > ks_vector_t;
 
-    /** 
+    /**
      * keymap maps key_src_t to wali::Key. The wali::Key is
      * an index into the vector values
      */
@@ -137,4 +141,3 @@ namespace wali
 } // namespace wali
 
 #endif  // wali_KEY_FACTORY_GUARD
-

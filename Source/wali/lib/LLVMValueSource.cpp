@@ -8,6 +8,7 @@
 #include "wali/LLVMValueSource.hpp"
 #include "wali/hm_hash.hpp"
 #include <llvm/Support/raw_ostream.h>
+#include <llvm/IR/Value.h>
 
 namespace wali
 {
@@ -52,4 +53,3 @@ namespace wali
   }
 
 } // namespace wali
-

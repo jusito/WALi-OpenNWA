@@ -61,7 +61,7 @@ FWPDS::FWPDS( const FWPDS& f ) : EWPDS(f),interGr(NULL),checkingPhase(false), ne
 {
 }
 
-FWPDS::FWPDS(bool _newton) : EWPDS(), newton(_newton), topDown(true)
+FWPDS::FWPDS(bool _newton) : EWPDS(), checkingPhase(false), newton(_newton), topDown(true)
 {
 }
 

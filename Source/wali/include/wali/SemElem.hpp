@@ -29,13 +29,13 @@ namespace wali
    */
   typedef ref_ptr<SemElem> sem_elem_t;
 
-  /** 
+  /**
    * @class SemElem
    * @brief base abstract class to be subclassed by user's semiring
    *
    * This abstract class provides the signature (or in Java interface) for a
    * Semiring Element (or Weight).  All pure abstract methods must be
-   * defined by the user. 
+   * defined by the user.
    *
    * The constructor takes a boolean that turns reference counting on or
    * off. By default it is on. Please leave this as true less you know
@@ -65,7 +65,7 @@ namespace wali
 
       /**
        *  @brief SemElem constructor
-       */ 
+       */
       //explicit SemElem( bool countme = true );
       explicit SemElem();
 
@@ -124,7 +124,7 @@ namespace wali
       virtual std::ostream& marshall( std::ostream& o ) const;
 
       /**
-       *  Used to print weights to XML. Outer wrapper that 
+       *  Used to print weights to XML. Outer wrapper that
        *  places the appropriate tags and then calls the virtual
        *  method marshall.
        */
@@ -152,9 +152,9 @@ namespace wali
        *   must have two properties
        *       1) the first element == this COMBINE se
        *       2) the second element == this DIFF se
-       * 
+       *
        *  @param se is the weight to be combined/diffed with "this"
-       *  
+       *
        *  @return std::pair<sem_elem_t,sem_elem_t> the delta
        */
       virtual std::pair<sem_elem_t,sem_elem_t> delta( SemElem * se );
@@ -164,50 +164,50 @@ namespace wali
        */
       virtual sem_elem_t star();
 
-      /** 
+      /**
        * Wrapper method for extend that will remove the ref_ptr
-       * to make the call to the user's code. 
+       * to make the call to the user's code.
        */
-      sem_elem_t extend( sem_elem_t se ) 
-      { 
-        return extend( se.get_ptr() ); 
+      sem_elem_t extend( sem_elem_t se )
+      {
+        return extend( se.get_ptr() );
       }
 
-      /** 
+      /**
        * Wrapper method for combine that will remove the ref_ptr
-       * to make the call to the user's code. 
+       * to make the call to the user's code.
        */
-      sem_elem_t combine( sem_elem_t se ) 
-      { 
-        return combine( se.get_ptr() ); 
+      sem_elem_t combine( sem_elem_t se )
+      {
+        return combine( se.get_ptr() );
       }
 
-      /** 
+      /**
        * Wrapper method for equal that will remove the ref_ptr
-       * to make the call to the user's code. 
+       * to make the call to the user's code.
        */
-      bool equal( sem_elem_t se ) const 
-      { 
-        return equal( se.get_ptr() ); 
+      bool equal( sem_elem_t se ) const
+      {
+        return equal( se.get_ptr() );
       }
 
       bool underApproximates( sem_elem_t se )
-      { 
-        return underApproximates( se.get_ptr() ); 
-      }
-      
-      /**
-       * Wrapper method for diff that will remove the ref_ptr
-       * to make the call to the user's code. 
-       */
-      sem_elem_t diff( sem_elem_t se ) 
-      { 
-        return diff( se.get_ptr() ); 
+      {
+        return underApproximates( se.get_ptr() );
       }
 
-      /** 
+      /**
+       * Wrapper method for diff that will remove the ref_ptr
+       * to make the call to the user's code.
+       */
+      sem_elem_t diff( sem_elem_t se )
+      {
+        return diff( se.get_ptr() );
+      }
+
+      /**
        * Wrapper method for delta that will remove the ref_ptr
-       * to make the call to the user's code. This is just a 
+       * to make the call to the user's code. This is just a
        * nice "typesafe macro" b/c sem_elem_t is used by WPDS
        */
       std::pair< sem_elem_t,sem_elem_t > delta( sem_elem_t se )
@@ -242,7 +242,7 @@ namespace wali
         return false;
       }
 
-      
+
       bool
       containerLessThan(sem_elem_t se) const
       {
@@ -314,6 +314,12 @@ namespace wali
       return left->equal(right);
     }
   };
+
+  inline std::ostream &operator<<(std::ostream &os,
+                                  const wali::SemElem &se){
+    se.print(os);
+    return os;
+  }
+
 }
 #endif  // wali_SEM_ELEM_GUARD
-
