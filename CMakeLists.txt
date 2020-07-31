@@ -22,7 +22,7 @@ endif(NOT DEFINED CMAKE_CXX_EXTENSIONS)
 if(NOT DEFINED LLVM_MAIN_SRC_DIR)
   # Find an include llvm if we build out of tree
   find_package(LLVM REQUIRED CONFIG)
-  find_library(LLVM_LIBRARY NAMES llvm REQUIRED)
+  find_library(LLVM_LIBRARY NAMES llvm)
   include_directories(${LLVM_INCLUDE_DIRS})
   link_directories(${LLVM_LIB_PATH} ${LLVM_LIBRARY_DIRS})
 endif()
