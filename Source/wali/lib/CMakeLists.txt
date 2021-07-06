@@ -19,22 +19,21 @@ add_library(wali # Name der Bibliothek
 		${WALI_SRC} # Quellcode der zur dieser Bibliothek gehören soll
 )
 
-set(LLVM_LINK_COMPONENTS
-  Support
-  Core
-)
-if(USE_LLVM_FAT_LIB)
-  llvm_config(wali USE_SHARED ${LLVM_LINK_COMPONENTS})
-else()
-  llvm_config(wali ${LLVM_LINK_COMPONENTS})
-endif()
-
 # Falls nötig und die Bibliothek selbst Abhangigkeiten besitzt,
 # kann man dieser hiermit dazu linken. Man sollte allerdings
 # soweit es geht darauf verzichten, da man ansonsten schnell in
 # der 'dependency hell' landet.
-# target_link_libraries(test_all
-# )
+if (CONAN)
+	target_include_directories(wali PRIVATE ${llvm-core_INCLUDE_DIRS})
+	target_link_libraries(wali PRIVATE llvm-core::llvm-core)
+else()
+	target_include_directories(wali PRIVATE ${LLVM_INCLUDE_DIRS})
+	if(USE_LLVM_FAT_LIB)
+		llvm_config(wali USE_SHARED Core Support)
+	else()
+		llvm_config(wali Core Support)
+	endif()
+endif()
 
 set_target_properties(wali
 	PROPERTIES

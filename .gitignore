@@ -4,6 +4,7 @@
 /bin64
 /lib64
 /build
+/test_package/build
 /bin
 /lib
 /Tests/harness

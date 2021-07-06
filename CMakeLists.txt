@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.0)
+cmake_minimum_required (VERSION 3.1.2)
 
 project (wali)
 set(CMAKE_PROJECT_NAME "wali")
@@ -19,12 +19,15 @@ if(NOT DEFINED CMAKE_CXX_EXTENSIONS)
 set(CMAKE_CXX_EXTENSIONS OFF)
 endif(NOT DEFINED CMAKE_CXX_EXTENSIONS)
 
-if(NOT DEFINED LLVM_MAIN_SRC_DIR)
-  # Find an include llvm if we build out of tree
-  find_package(LLVM REQUIRED CONFIG)
-  find_library(LLVM_LIBRARY NAMES llvm)
-  include_directories(${LLVM_INCLUDE_DIRS})
-  link_directories(${LLVM_LIB_PATH} ${LLVM_LIBRARY_DIRS})
+# setup conan for dependecy resolution
+if (EXISTS ${CMAKE_BINARY_DIR}/conan_paths.cmake)
+  set(CONAN ON)
+  include(${CMAKE_BINARY_DIR}/conan_paths.cmake)
+  find_package(llvm-core 12 REQUIRED)
+else()
+  set(CONAN OFF)
+  find_package(LLVM 12 REQUIRED)
 endif()
+message("[CMakeLists] Conan usage: " ${CONAN})
 
 add_subdirectory(Source)
